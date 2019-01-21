@@ -2,8 +2,11 @@
 
 공부 목표 
 c : create
+
 r : read
+
 u : update
+
 d : delet
 
 +

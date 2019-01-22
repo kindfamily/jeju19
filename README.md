@@ -1,8 +1,8 @@
-# 2019년 제주에서 만난 코딩공부 식구(19)들 레파지토리
+#2019년 제주에서 만난 코딩공부 식구(19)들 레파지토리
 
 
 
-공부 목표 
+##공부 목표 
 
 c : create
 
@@ -13,18 +13,21 @@ u : update
 d : delet
 
 
+###설정
 1. groom ide 설정 방법
 
-
     git clone 
-
+    
     cd jeju19
     
     cd mysite
 
 pip3 install pillow==2.9.0
+
 pip3 install django-taggit
+
 python manage.py makemigrations & migrate
+
 
 
 

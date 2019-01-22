@@ -1,5 +1,8 @@
 2019년 제주에서 만난 코딩공부 식구(19)들 레파지토리
 
+[README파일 문법 정리 링크](https://teragoon.wordpress.com/2012/04/04/github%EC%97%90%EC%84%9C-readmemd-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0markdown-%EB%AC%B8%EB%B2%95/)
+
+
 # 공부 목표
 
 c : create
@@ -43,7 +46,7 @@ groom ide 설정 방법
 
 이슈버튼은 요렇게 생겼어요 
 
-<img width="400" src="https://user-images.githubusercontent.com/12974446/51507206-2dad2c80-1e33-11e9-98a9-ca79934f550d.png">
+<img width="400" src="https://user-images.githubusercontent.com/12974446/51507363-ec694c80-1e33-11e9-8711-1c3de1fa4a54.png">
 
 python 설치
 git 설치

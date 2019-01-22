@@ -14,7 +14,9 @@ d : delet
 
 
 1. groom ide 설정 방법
+
 "'
+
 git clone 
 
 cd jeju19

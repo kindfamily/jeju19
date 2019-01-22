@@ -13,12 +13,13 @@ d : delet
 
 ### 설정
 
-1.groom ide 설정 방법
-<li>깃헙fork</li>
+room ide 설정 방법
+
++깃헙fork
 
 <img width="200" src="https://user-images.githubusercontent.com/12974446/51506545-246e9080-1e30-11e9-8fb0-84912434e068.png">
 
-<li>깃헙다운 및 설정</li>    
++깃헙다운 및 설정
 
     git clone https://github.com/tuntunkimpo/jeju19.git
 

@@ -22,6 +22,7 @@ groom ide 설정 방법
 + 깃헙다운 및 설정
 
 ** git clone [ 클론주소 ]
+** git clone https://github.com/tuntunkimpo/jeju19.git
 
     cd jeju19
     

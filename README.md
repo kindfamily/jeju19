@@ -13,7 +13,7 @@ d : delet
 
 ### 설정
 
-room ide 설정 방법
+groom ide 설정 방법
 
 + 깃헙fork
 

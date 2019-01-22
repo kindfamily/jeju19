@@ -15,14 +15,16 @@ d : delet
 
 ###설정
 1. groom ide 설정 방법
+<li>git clone <li>
 
-    git clone 
+
+    
     
     cd jeju19
     
     cd mysite
 
-pip3 install pillow==2.9.0
+    pip3 install pillow==2.9.0
 
 pip3 install django-taggit
 

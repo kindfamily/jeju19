@@ -1,0 +1,165 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+{% load staticfiles %}
+<body class="page-about">
+<div class="jejucafe-container">
+    <!-- global-header 시작 -->
+    <header class="global-header">
+        <div class="grid">
+            <button class="global-menu-btn">
+                <i class="fas fa-bars"></i>
+                <span class="btn-label">메뉴</span>
+            </button>
+            <a class="logo" href="/">
+                <img src="{% static 'images/logo.png' %}" alt="제주카페찾기">
+            </a>
+            <div class="global-menu">
+                <nav class="global-menu-nav">
+                    <ul>
+                        <li class="menu-item-about">
+                            <a href="/about">서비스 소개</a>
+                        </li>
+                        <li class="menu-item-list">
+                            <a href="/cafelist">카페들</a>
+                        </li>
+                    </ul>
+                    <a href="/write" class="add-cafe-btn">
+                        <i class="fas fa-plus"></i>
+                        <span class="btn-label">카페등록</span>
+                    </a>
+                </nav>
+                <form class="search-cafe-form text-input-and-btn">
+                    <div class="input-wrapper">
+                        <input type="search" placeholder="찾고 싶은 카페 이름">
+                    </div>
+                    <button class="icon-btn search-cafe-form-btn">
+                        <i class="fas fa-search"></i>
+                        <span class="btn-label">카페찾기</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- global-header 끝 -->
+
+    <!-- content-area 시작 -->
+    <div class="content-area">
+        <!-- 소개 페이지 내용 시작 -->
+        <div class="grid">
+        <header>
+                <h1>{{cafeobj.name}}</h1>
+        <br>
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img src="{{ cafeobj.mainphoto.url }}" style="height:50%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        {% if cafeobj.subphoto %}
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img src="{{ cafeobj.subphoto.url }}" style="height:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        {% endif %}
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        </header>
+        <section class="content-section">
+          <h2>개발자와 디자이너들을 위한 카페에요.</h2>
+          <br>
+          <div class="cafe-item-info">
+          <ul class="cafe-item-contact">
+            <li>
+                <i class="fas fa-map-marker-alt"></i>
+                {{cafeobj.locate}}
+            </li>
+            <li>
+                <i class="fas fa-phone"></i>
+                {{cafeobj.phone}}
+            </li>
+            <li>
+                <i class="fab fa-instagram"></i>
+                {{cafeobj.insta}}
+            </li>
+            <li>
+              <p>{{cafeobj.content|linebreaks}}</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+        <!-- 소개 페이지 내용 끝 -->
+    </div>
+    <!-- content-area 끝 -->
+    </div>
+
+    <div id="map"></div>
+    <script>
+      var data = marker
+      function initMap() {
+        var jeju = {lat: 33.3616658, lng: 126.5204118};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: jeju
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: {{cafeobj.lat}}, lng: {{cafeobj.lng}}},
+          map: map
+        });
+
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdKrZSsLIuxHuu59UCARaAvUtcmaMmBeU&callback=initMap">
+    </script>
+
+    <!-- global-footer 시작 -->
+    <footer class="global-footer">
+        <div class="grid">
+            <p class="copyright">
+                2018 &copy; 제주카페찾기
+            </p>
+        </div>
+    </footer>
+    <!-- global-footer 끝 -->
+  </div>
+    
+<!-- 뎃글 시작 -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://jejucodincampsample.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+{% endblock content %}

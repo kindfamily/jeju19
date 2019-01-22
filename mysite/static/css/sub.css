@@ -1,0 +1,165 @@
+
+
+#header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: white;
+    transition:all 0.3s;
+
+}
+
+#header.on{
+    top: -34px;
+}
+#header .inner{
+    max-width:1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header .top{
+    height: 34px;
+    background: #eeeeee;
+}
+
+#header .top .inner{
+    display: flex;
+    justify-content: space-between;
+}
+#header .top .toplink{
+    display: flex;
+    padding-top: 5px;
+}
+
+#header .top .toplink > li{
+    margin-left:10px;
+}
+#header .mid{
+    height: 81px;
+
+
+}
+#header .mid .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#header .mid .logo{
+
+}
+#header .bottom{
+    height: 45px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#header .bottom .inner > div img{
+    vertical-align: middle;
+}
+
+#header .bottom .inner > div img:first-child{
+    margin-right: -10px;
+    position: relative;
+    z-index: 1;
+}
+#header .mid .inner .gnb{
+    display: flex;
+}
+
+#header .mid .inner .gnb > li{
+    margin-left: 20px;
+    background: url("../img/sub/bar.png")no-repeat left top;
+    padding-left:20px;
+}
+
+#header .mid .inner .gnb > li:first-child{
+    background: none;
+}
+
+
+#section01 {
+    padding-top: 163px;
+    height: 700px;
+    /*background: orange;*/
+}
+
+#section01 .name_container{
+    padding-top: 85px;
+    margin-bottom: 20px;
+}
+
+#table_wrap{
+    margin-bottom: 10px;
+}
+#table_wrap .t_head{
+    background: #ffdc50;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height:35px;
+}
+#table_wrap .t_head > th{
+    min-width: 40%;
+}
+#table_wrap .t_body{
+    text-align: center;
+}
+#table_wrap .t_body > td{
+    width: 24%;
+    color: #555555;
+    line-height: 41px;
+    border-bottom: 1px solid #c1c3c4;
+
+}
+
+#table_wrap tr{
+    transition:all 0.5s;
+    cursor: pointer;
+}
+
+#table_wrap tr:hover{
+    background: rgba(128, 128, 128, 0.23);
+}
+
+#table_wrap .t_body > td:first-child{
+    /*width:10%;*/
+}
+
+
+#section01 .btn{
+    float: right;
+    width: 67px;
+    height: 26px;
+    background: #000;
+    color: white;
+    line-height: 26px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition:all .5s;
+}
+
+#section01 .btn:hover{
+    background: #ffdc50;
+    color: #000;
+}
+
+#section01 .inner_container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#footer {
+    height: 297px;
+    background: url("../img/sub/footer.png")no-repeat center top;
+    position: relative;
+}
+
+
+
+
+

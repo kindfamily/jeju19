@@ -1,0 +1,122 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+{% load staticfiles %}
+<body class="page-list">
+<!-- <div class="jejucafe-container">
+<div class="posNum"></div> -->
+
+
+<!----------  fix section  ---------->
+
+
+
+<header id="header">
+    <div class="top">
+        <article class="inner">
+            <div><img src="{% static 'images/sub/toplink.png' %}" alt="toplink"></div>
+            <ul class="toplink">
+                <li><a href="#"><img src="{% static 'images/sub/topmenu01.png' %}" alt=""></a></li>
+                <li><a href="#"><img src="{% static 'images/sub/topmenu02.png' %}" alt=""></a></li>
+                <li><a href="#"><img src="{% static 'images/sub/topmenu03.png' %}" alt=""></a></li>
+            </ul>
+        </article>
+
+    </div>
+    <div class="mid">
+        <article class="inner">
+            
+            <h1 class="logo"><img src="{% static 'images/sub/logo.png' %}" alt="홈앤홈로고"></h1>
+
+
+            <ul class="gnb clearfix">
+                <li><a href="#"><img src="{% static 'images/sub/menu01.png' %}" alt="menu"></a></li>
+                <li><a href="#"><img src="{% static 'images/sub/menu02.png' %}" alt="menu"></a></li>
+                <li><a href="#"><img src="{% static 'images/sub/menu03.png' %}" alt="menu"></a></li>
+                <li><a href="#"><img src="{% static 'images/sub/menu04.png' %}" alt="menu"></a></li>
+            </ul>
+        </article>
+
+    </div>
+
+    <div class="bottom">
+        <article class="inner">
+            <div><a href="#"><img src="{% static 'images/sub/icon.png' %}" alt="icon"><img src="{% static 'images/sub/toptitle.png' %}" alt="toptitle"></a></div>
+        </article>
+
+    </div>
+
+
+</header><!-- header end -->
+    
+
+    
+<!----------  fix section  end ---------->
+
+<main id="container" class="container">
+    <section class="main">
+        <section id="section01">
+
+            <article class="inner_container">
+
+                <div class="name_container">
+                    <div><img src="{% static 'images/sub/nametitle.png' %}" alt="name"></div>
+                </div>
+                
+                <table id="table_wrap">
+                    <tr class="t_head">
+                        <th>넘버</th>
+                        <!-- <th>사진</th> -->
+                        <th>아이디</th>
+                        <th>이메일</th>
+                        <th>관리자/회원</th>
+                        <th>가입일자</th>
+                    </tr>
+                    {% for i in memberlist %}
+                    <input >
+                    <tr class="t_body">
+                        <td>{{i.pk}}</td>
+                        <!-- <td>
+                            {% if i.mainphoto %}
+                            <img src="{{ i.mainphoto.url }}" style="width:80px;" alt="">
+                            {% endif %}
+                        </td> -->
+                        <td>{{i.name}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.cate}}</td>
+                        <td>{{i.joinDate}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+
+                <div class="btn"><span>글쓰기</span></div>
+           
+            </article>
+
+        </section><!-- scene01 end -->
+
+    </section><!-- wrap end -->
+
+    <footer id="footer">
+
+    </footer><!-- footer end -->
+
+</main><!-- scrollBox end -->
+
+
+
+<!----------  pop section  ---------->
+
+<div class="pop">
+
+</div><!--pop end-->
+
+
+
+<!----------  pop section  end  ---------->    
+    
+    
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+{% endblock content %}

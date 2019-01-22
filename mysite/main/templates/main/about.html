@@ -1,0 +1,80 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+{% load staticfiles %}
+<body class="page-about">
+<div class="jejucafe-container">
+    <!-- global-header 시작 -->
+    <header class="global-header">
+        <div class="grid">
+            <button class="global-menu-btn">
+                <i class="fas fa-bars"></i>
+                <span class="btn-label">메뉴</span>
+            </button>
+            <a class="logo" href="/">
+                <img src="{% static 'images/logo.png' %}" alt="제주카페찾기">
+            </a>
+            <div class="global-menu">
+                <nav class="global-menu-nav">
+                    <ul>
+                        <li class="menu-item-about">
+                            <a href="/about">서비스 소개</a>
+                        </li>
+                        <li class="menu-item-list">
+                            <a href="/cafelist">카페들</a>
+                        </li>
+                    </ul>
+                    <a href="/write" class="add-cafe-btn">
+                        <i class="fas fa-plus"></i>
+                        <span class="btn-label">카페등록</span>
+                    </a>
+                </nav>
+                <form class="search-cafe-form text-input-and-btn">
+                    <div class="input-wrapper">
+                        <input type="search" placeholder="찾고 싶은 카페 이름">
+                    </div>
+                    <button class="icon-btn search-cafe-form-btn">
+                        <i class="fas fa-search"></i>
+                        <span class="btn-label">카페찾기</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- global-header 끝 -->
+
+    <!-- content-area 시작 -->
+    <div class="content-area">
+        <!-- 소개 페이지 내용 시작 -->
+        <article class="page-content">
+            <div class="grid">
+                <header>
+                    <h1>제주도 카페, 여기 다 있어요!</h1>
+                </header>
+                <section class="content-section">
+                    <header>
+                        <h2>섹션 제목</h2>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cupiditate molestias vel veritatis odio repellat quod velit, at delectus dolor tenetur, laudantium atque, inventore. Quia obcaecati accusantium consequuntur dignissimos fugit.</p>
+                    <p>제주코딩베이스캠프에서 제작하는 예제 웹사이트입니다.</p>
+                </section>
+            </div>
+        </article>
+        <!-- 소개 페이지 내용 끝 -->
+    </div>
+    <!-- content-area 끝 -->
+
+    <!-- global-footer 시작 -->
+    <footer class="global-footer">
+        <div class="grid">
+            <p class="copyright">
+                2018 &copy; 제주카페찾기
+            </p>
+        </div>
+    </footer>
+    <!-- global-footer 끝 -->
+</div>
+
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+{% endblock content %}

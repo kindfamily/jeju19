@@ -1,0 +1,99 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+{% load staticfiles %}
+<body class="page-list">
+<div class="jejucafe-container">
+    <!-- global-header 시작 -->
+    <header class="global-header">
+        <div class="grid">
+            <button class="global-menu-btn">
+                <i class="fas fa-bars"></i>
+                <span class="btn-label">메뉴</span>
+            </button>
+            <a class="logo" href="/">
+                <img src="{% static 'images/logo.png' %}" alt="제주카페찾기">
+            </a>
+            <div class="global-menu">
+                <nav class="global-menu-nav">
+                    <ul>
+                        <li class="menu-item-about">
+                            <a href="/about">서비스 소개</a>
+                        </li>
+                        <li class="menu-item-list">
+                            <a href="/cafelist">카페들</a>
+                        </li>
+                    </ul>
+                    <a href="/write" class="add-cafe-btn">
+                        <i class="fas fa-plus"></i>
+                        <span class="btn-label">카페등록</span>
+                    </a>
+                </nav>
+                <form class="search-cafe-form text-input-and-btn">
+                    <div class="input-wrapper">
+                        <input type="search" placeholder="찾고 싶은 카페 이름">
+                    </div>
+                    <button class="icon-btn search-cafe-form-btn">
+                        <i class="fas fa-search"></i>
+                        <span class="btn-label">카페찾기</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- global-header 끝 -->
+
+    <!-- content-area 시작 -->
+    <div class="content-area">
+        <!-- cafe-list 시작 -->
+        <div class="cafe-list">
+            <div class="grid">
+              {% for i in cafelistobj %}
+                <!-- 카페 1개 시작 -->
+                <section class="cafe-item">
+                    <figure class="cafe-item-photo">
+                        {% if i.mainphoto %}
+                        <img src="{{ i.mainphoto.url }}" alt="">
+                        {% endif %}
+                    </figure>
+                    <div class="cafe-item-info">
+                        <a href="https://djangotutowonbong-rigug.run.goorm.io/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.name}}</h2></a>
+                        <p>개발자와 디자이너들을 위한 카페에요.</p>
+                        <ul class="cafe-item-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                {{i.locate}}
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                {{i.phone}}
+                            </li>
+                            <li>
+                                <i class="fab fa-instagram"></i>
+                                {{i.insta}}
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- 카페 1개 끝 -->
+                {% endfor %}
+            </div>
+        </div>
+        <!-- cafe-list 끝 -->
+    </div>
+    <!-- content-area 끝 -->
+
+    <!-- global-footer 시작 -->
+    <footer class="global-footer">
+        <div class="grid">
+            <p class="copyright">
+                2018 &copy; 제주카페찾기
+            </p>
+        </div>
+    </footer>
+    <!-- global-footer 끝 -->
+</div>
+
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+{% endblock content %}

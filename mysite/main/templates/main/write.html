@@ -1,0 +1,183 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+{% load staticfiles %}
+<body class="page-write">
+<div class="jejucafe-container">
+    <!-- global-header 시작 -->
+    <header class="global-header">
+        <div class="grid">
+            <button class="global-menu-btn">
+                <i class="fas fa-bars"></i>
+                <span class="btn-label">메뉴</span>
+            </button>
+            <a class="logo" href="/">
+                <img src="{% static 'images/logo.png' %}" alt="제주카페찾기">
+            </a>
+            <div class="global-menu">
+                <nav class="global-menu-nav">
+                    <ul>
+                        <li class="menu-item-about">
+                            <a href="/about">서비스 소개</a>
+                        </li>
+                        <li class="menu-item-list">
+                            <a href="/cafelist">카페들</a>
+                        </li>
+                    </ul>
+                    <a href="/write" class="add-cafe-btn">
+                        <i class="fas fa-plus"></i>
+                        <span class="btn-label">카페등록</span>
+                    </a>
+                </nav>
+                <form class="search-cafe-form text-input-and-btn">
+                    <div class="input-wrapper">
+                        <input type="search" placeholder="찾고 싶은 카페 이름">
+                    </div>
+                    <button class="icon-btn search-cafe-form-btn">
+                        <i class="fas fa-search"></i>
+                        <span class="btn-label">카페찾기</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- global-header 끝 -->
+
+    <!-- content-area 시작 -->
+    <div class="content-area">
+        <!-- 카페등록 페이지 내용 시작 -->
+        <article class="page-content">
+            <div class="grid">
+                <header>
+                    <h1>카페등록</h1>
+                </header>
+                <!-- <form method="POST" action="/cafelist/" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_ul }}
+                    <button type="submit">submit</button>
+                </form> -->
+                <form method="POST" action="/cafelist/" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="form-row-content">
+                            <span class="form-row-label">카페위치</span>
+                            <div class="form-row-input">
+                                <label>
+                                    <input type="radio" name="cafeArea" value="1">
+                                    <span>구좌읍</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="2">
+                                    <span>남원읍</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="3">
+                                    <span>대정읍</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="4">
+                                    <span>서귀포시내</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="5">
+                                    <span>성산읍</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="6">
+                                    <span>안덕면</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="7">
+                                    <span>애월읍</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="8">
+                                    <span>우도면</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="9">
+                                    <span>제주시내</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="10">
+                                    <span>조천읍</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="11">
+                                    <span>표선면</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="12">
+                                    <span>한경면</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="cafeArea" value="13">
+                                    <span>한림읍</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-row-content">
+                            <span class="form-row-label">카페이름</span>
+                            <div class="form-row-input">
+                                <input type="text" name="cafeName">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-row-content">
+                            <span class="form-row-label">주소</span>
+                            <div class="form-row-input">
+                                <input type="text" name="cafeAddress">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-row-content">
+                            <span class="form-row-label">전화번호</span>
+                            <div class="form-row-input">
+                                <input type="text" name="cafePhoneNum">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-row-content">
+                            <span class="form-row-label">카페소개</span>
+                            <div class="form-row-input">
+                                <input type="text" name="cafeIntro">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-row-content">
+                            <span class="form-row-label">사진</span>
+                            <div class="form-row-input">
+                                <input type="file" name="cafePhoto">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-row form-row-btn-con">
+                        <input type="submit" value="등록하기" class="btn big-btn cafe-write-btn">
+                    </div>
+                </form>
+            </div>
+        </article>
+        <!-- 카페등록 페이지 내용 끝 -->
+    </div>
+    <!-- content-area 끝 -->
+
+    <!-- global-footer 시작 -->
+    <footer class="global-footer">
+        <div class="grid">
+            <p class="copyright">
+                2018 &copy; 제주카페찾기
+            </p>
+        </div>
+    </footer>
+    <!-- global-footer 끝 -->
+</div>
+
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+{% endblock content %}

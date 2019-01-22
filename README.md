@@ -18,17 +18,18 @@ d : delet
 <li>깃헙fork</li>
     
 <li>깃헙다운 및 설정</li>    
-    git clone
+     
+    git clone https://github.com/tuntunkimpo/jeju19.git
     
     cd jeju19
-    
+   
     cd mysite
 
     pip3 install pillow==2.9.0
-
-pip3 install django-taggit
-
-python manage.py makemigrations & migrate
+    
+    pip3 install django-taggit
+    
+    python manage.py makemigrations & migrate
 
 
 
@@ -43,6 +44,8 @@ python manage.py makemigrations & migrate
 ** 문제 발생시 이슈를 공유해 주세요
 
 python 설치
+git 설치
+github 연결
 설치를 완료 해야
 
 https://www.python.org/downloads/

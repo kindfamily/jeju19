@@ -38,10 +38,12 @@ groom ide 설정 방법
     python manage.py makemigrations & migrate
     
 
-2. 로컬pc에서 설정방법
+
+로컬pc에서 설정방법
 ** 진행도중 오류가 많이 발생할것으로 생각됩니다 가급적 구름 ide에서 작업하시길 권장드립니다
 
 ** 문제 발생시 이슈를 공유해 주세요 (일종에 게시판 같은기능 인것? 같아요 ㅋㅋ실제는 어떻게 쓴느지 모르겠지만요)
+
 
 
 이슈버튼은 요렇게 생겼어요 
@@ -49,8 +51,8 @@ groom ide 설정 방법
 <img width="400" src="https://user-images.githubusercontent.com/12974446/51507363-ec694c80-1e33-11e9-8711-1c3de1fa4a54.png">
 
 python 설치
-git 설치
-github 연결
-설치를 완료 해야
+*설치를 완료 해야 pip3 명령어 사용가능
+[설치링크](https://www.python.org/downloads/)
 
-https://www.python.org/downloads/
+git&github 설정 ( 작성 예정 )
+

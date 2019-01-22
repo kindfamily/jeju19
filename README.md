@@ -13,7 +13,7 @@ d : delet
 
 ### 설정
 
-1. groom ide 설정 방법
+1.groom ide 설정 방법
 <li>깃헙fork</li>
 
 <img width="200" src="https://user-images.githubusercontent.com/12974446/51506545-246e9080-1e30-11e9-8fb0-84912434e068.png">

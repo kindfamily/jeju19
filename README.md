@@ -36,12 +36,9 @@ groom ide 설정 방법
     pip3 install django-taggit # 뭔지 모르겠음 ㅠ ㅠ 
     
     python manage.py makemigrations & migrate # db변경 되면 입력해야하는 명령
-    
-+ 가상환경 설정 
-(virtualenv)
-    
-    pip3 install virtualenv # 가상환경 프로그램 설치
 
+    pip3 install virtualenv # 가상환경 프로그램 설치
+    
     virtualenv myvenv # 가상환경 설정
     
     source myvenv/bin/activate # 가상환경으로 진입

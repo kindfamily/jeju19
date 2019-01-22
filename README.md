@@ -43,7 +43,7 @@ groom ide 설정 방법
 
 이슈버튼은 요렇게 생겼어요 
 
-<img width="200" src="https://user-images.githubusercontent.com/12974446/51507206-2dad2c80-1e33-11e9-98a9-ca79934f550d.png">
+<img width="400" src="https://user-images.githubusercontent.com/12974446/51507206-2dad2c80-1e33-11e9-98a9-ca79934f550d.png">
 
 python 설치
 git 설치

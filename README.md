@@ -23,10 +23,15 @@ groom ide 설정 방법
 ** git clone [ 클론주소 ]
 
     cd jeju19
+    
     cd mysite
+    
     pip3 install pillow==2.9.0
+    
     pip3 install django-taggit
+    
     python manage.py makemigrations & migrate
+    
 
 
 

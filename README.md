@@ -27,16 +27,32 @@ groom ide 설정 방법
 ** git clone [ 클론주소 ]
 ** git clone https://github.com/tuntunkimpo/jeju19.git
 
-    cd jeju19
+    cd jeju19 # 경로이동
     
-    cd mysite
+    cd mysite # 경로이동
     
-    pip3 install pillow==2.9.0
+    pip3 install pillow==2.9.0 # 뭔지 모르겠음 ㅠ ㅠ 
     
-    pip3 install django-taggit
+    pip3 install django-taggit # 뭔지 모르겠음 ㅠ ㅠ 
     
-    python manage.py makemigrations & migrate
+    python manage.py makemigrations & migrate # db변경 되면 입력해야하는 명령
     
++ 가상환경 설정 
+(virtualenv)
+    
+    pip3 install virtualenv # 가상환경 프로그램 설치
+
+    virtualenv myvenv # 가상환경 설정
+    
+    source myvenv/bin/activate # 가상환경으로 진입
+    
+    pip3 install django==2.1 # 장고 2.1버전 설치인것으로 보임
+    
+    pip3 install pillow==2.9.0 # 뭔지 모르겠음 ㅠ ㅠ 
+    
+    pip3 install django-taggit # 뭔지 모르겠음 ㅠ ㅠ    
+    
+
 
 
 로컬pc에서 설정방법

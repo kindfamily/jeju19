@@ -15,8 +15,9 @@ d : delet
 
 ###설정
 1. groom ide 설정 방법
-
+<li>깃헙fork</li>
     
+<li>깃헙다운 및 설정</li>    
     git clone
     
     cd jeju19

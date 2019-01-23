@@ -3,7 +3,7 @@
 [README파일 문법 정리 링크](https://teragoon.wordpress.com/2012/04/04/github%EC%97%90%EC%84%9C-readmemd-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0markdown-%EB%AC%B8%EB%B2%95/)
 
 
-# 공부 목표
+# 목표
 
 c : create [참고-범재님저장소](https://github.com/beomjae/djangocafelist)
 
@@ -98,4 +98,10 @@ d : delet
 [설치링크](https://www.python.org/downloads/)
 
 git&github 설정 ( 작성 예정 )
+
+
+
+## 장고어드민 계정 생성 명령어 
+
+    python manage.py createsuperuser
 

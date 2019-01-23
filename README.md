@@ -20,7 +20,10 @@ d : delet
 
 + 깃헙fork
 
-요버튼 클릭해주세요 <img width="200" src="https://user-images.githubusercontent.com/12974446/51506545-246e9080-1e30-11e9-8fb0-84912434e068.png">
+요버튼 클릭해주세요 
+
+<img width="200" src="https://user-images.githubusercontent.com/12974446/51506545-246e9080-1e30-11e9-8fb0-84912434e068.png">
+
 
 + 깃헙다운 및 설정
 
@@ -59,6 +62,7 @@ d : delet
 요버튼 클릭해주세요 
 
 <img width="200" src="https://user-images.githubusercontent.com/12974446/51506545-246e9080-1e30-11e9-8fb0-84912434e068.png">
+
 
 + 깃헙다운 및 설정
 

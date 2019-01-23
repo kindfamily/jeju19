@@ -56,7 +56,9 @@ d : delet
 
 + 깃헙fork
 
-요버튼 클릭해주세요 <img width="200" src="https://user-images.githubusercontent.com/12974446/51506545-246e9080-1e30-11e9-8fb0-84912434e068.png">
+요버튼 클릭해주세요 
+
+<img width="200" src="https://user-images.githubusercontent.com/12974446/51506545-246e9080-1e30-11e9-8fb0-84912434e068.png">
 
 + 깃헙다운 및 설정
 
@@ -83,7 +85,9 @@ d : delet
 
 이슈버튼은 요렇게 생겼어요 
 
-요버튼 눌러서 작성해주시면 됩니다. 이슈는 관련내용을 따라하면서 안되는 것을 적는 겁니다. 형식은 따로 있는건 아니니 아무거나 막 적어주시면 누군가 해결해 줄수도 있습니다. 다만 가능한 구체적으로 적어 주시면더 좋겠지요 <img width="400" src="https://user-images.githubusercontent.com/12974446/51507363-ec694c80-1e33-11e9-8711-1c3de1fa4a54.png">
+요버튼 눌러서 작성해주시면 됩니다. 이슈는 관련내용을 따라하면서 안되는 것을 적는 겁니다. 형식은 따로 있는건 아니니 아무거나 막 적어주시면 누군가 해결해 줄수도 있습니다. 다만 가능한 구체적으로 적어 주시면더 좋겠지요 
+
+<img width="800" src="https://user-images.githubusercontent.com/12974446/51507363-ec694c80-1e33-11e9-8711-1c3de1fa4a54.png">
 
 + python 설치
 * 설치를 완료 해야 pip3 명령어 사용가능

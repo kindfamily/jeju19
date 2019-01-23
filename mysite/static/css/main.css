@@ -1,43 +1,590 @@
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, code, figure, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption { margin: 0; padding: 0; border: 0; }
+div, span, article, section, header, footer, p, ul, li, figure, a, fieldset, legend, label, input { box-sizing: border-box; }
 
-
-
-#section01 {
-    height: 980px;
-    background: orange;
+html {
+    height: 100%;
+    color: #333;
+    font-family: 'Noto Sans KR', Roboto, sans-serif;
 }
 
-
-#section02 {
-    height: 980px;
-    background: skyblue;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-
-#section03 {
-    height: 980px;
-
-    background: green;
+a {
+    display: inline-block;
+    color: #333;
 }
 
-
-#section04 {
-    height: 980px;
-
-    background: violet;
+li {
+    list-style: none;
 }
 
-
-#section05 {
-    height: 980px;
-    background: gray;
+input[type='text'],
+input[type='password'],
+input[type='search'],
+input[type='email'] {
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    background: white;
 }
 
+.grid {
+    padding: 0 20px;
+}
 
-#footer {
-    height: 100px;
-    background: #333;
+.jejucafe-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 45px;
+}
+
+.content-area {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+body.page-home .content-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.global-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 45px;
+    background: #1cb1c9;
+}
+
+.global-header > .grid {
+    height: 100%;
+}
+
+.global-header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    font-size: 0;
+    transform: translate(-50%, -50%);
+}
+
+.global-header input[type='search'] {
+    border: 0;
+}
+
+.global-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    width: 45px;
+    height: 45px;
+    border: 0;
+    font-size: 1.2rem;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 3px;
+    font-size: 1rem;
+    text-decoration: none;
+    background: white;
+    cursor: pointer;
+}
+
+.big-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5em;
+    border: 0;
+    color: white;
+    text-align: center;
+    background: #1cb1c9;
+}
+
+.icon-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-label {
+    display: inline-block;
+}
+
+.icon-btn .btn-label,
+.global-menu-btn .btn-label {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 1px, 1px, 1px);
+}
+
+.global-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    color: white;
+    background: rgba(0, 0, 0,0.8);
+}
+
+.global-menu-nav {
+    margin-top: 5vh;
+}
+
+.global-menu a {
+    padding: 1em 0;
+    color: white;
+    text-decoration: none;
+}
+
+body.page-about .menu-item-about a,
+body.page-list .menu-item-list a {
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.3) 0 0 0.3em;
+}
+
+.global-menu .icon-btn {
+    color: white;
+}
+
+body.menu-on {
+    overflow: hidden;
+    height: 100%;
+}
+
+body.menu-on .global-menu {
+    display: block;
+}
+
+.text-input-and-btn {
+    display: flex;
+}
+
+.text-input-and-btn .input-wrapper {
+    flex: 1;
+    margin-right: 0.5em;
+}
+
+.text-input-and-btn input[type='text'],
+.text-input-and-btn input[type='search'],
+.text-input-and-btn input[type='email'] {
+    width: 100%;
+}
+
+.search-cafe-form {
+    margin-top: 1rem;
+}
+
+.jejumap-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.main-copy {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.jejumap-header p {
+    font-size: 0.8rem;
+}
+
+.jejumap-container {
+    margin: 2rem 0;
+}
+
+.jejumap {
     position: relative;
+    width: 320px;
+    height: 160px;
+    margin: 0 auto;
 }
+
+.jejumap-item {
+    position: absolute;
+    transition: all 0.2s;
+}
+
+.jejumap-item-title {
+    position: absolute;
+    z-index: 20;
+    min-width: 40px;
+    min-height: 40px;
+    padding-top: 13px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer !important;
+}
+
+.jejumap-check {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    opacity: 0;
+}
+
+.jejumap-check:checked ~ .jejumap-item-title {
+    font-weight: bold;
+}
+
+.jejumap-item .mapshape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/sprite_map.png');
+    background-repeat: no-repeat;
+    background-size: 428px 334px;
+}
+
+.jejumap-item:nth-child(1) {
+    top: 44.6875%;
+    left: 0.46875%;
+    width: 57px;
+    height: 59px;
+}
+
+.jejumap-item:nth-child(1) .mapshape { background-position: 0.539% 0.364%; }
+.jejumap-item:nth-child(1) .jejumap-check:checked + .mapshape { background-position: 0.54% 61.202%; }
+.jejumap-item:nth-child(1) .jejumap-item-title { top: 23%; left: 0%; }
+
+.jejumap-item:nth-child(2) {
+    top: 24.6875%; left: 8.3%;
+    width: 64px; height: 64px;
+}
+
+.jejumap-item:nth-child(2) .mapshape { background-position: 17.308% 0.37%; }
+.jejumap-item:nth-child(2) .jejumap-check:checked + .mapshape { background-position: 17.194% 62.222%; }
+.jejumap-item:nth-child(2) .jejumap-item-title { top: 20%; left: 17%; }
+
+.jejumap-item:nth-child(3) {
+    top: 16.875%; left: 20.3%;
+    width: 85px; height: 65px;
+}
+
+.jejumap-item:nth-child(3) .mapshape { background-position: 38.047% 0.372%; }
+.jejumap-item:nth-child(3) .jejumap-check:checked + .mapshape { background-position: 38.047% 62.57%; }
+.jejumap-item:nth-child(3) .jejumap-item-title { top: 15%; left: 13%; min-height: 48px; padding-top: 16px; }
+
+.jejumap-item:nth-child(4) {
+    top: 5.625%; left: 31%;
+    width: 81px; height: 69px;
+}
+.jejumap-item:nth-child(4) .mapshape { background-position: 63.165% 0.377%; }
+.jejumap-item:nth-child(4) .jejumap-check:checked + .mapshape { background-position: 63.112% 63.396%; }
+.jejumap-item:nth-child(4) .jejumap-item-title { top: 5%; left: 26%; min-width: 58px; min-height: 58px; padding-top: 27px; }
+
+.jejumap-item:nth-child(5) {
+    left: 54.8%; top: 1.875%;
+    width: 52px; height: 66px;
+}
+.jejumap-item:nth-child(5) .mapshape { background-position: 80.718% 0.373%; }
+.jejumap-item:nth-child(5) .jejumap-check:checked + .mapshape { background-position: 80.5% 62.804%; }
+.jejumap-item:nth-child(5) .jejumap-item-title { top: 5%; left: 15%; min-height: 46px; padding-top: 18px; }
+
+.jejumap-item:nth-child(6) {
+    left: 69.7%; top: 1.25%;
+    width: 66px; height: 42px;
+}
+.jejumap-item:nth-child(6) .mapshape { background-position: 99.172% 0.342%; }
+.jejumap-item:nth-child(6) .jejumap-check:checked + .mapshape { background-position: 99.308% 57.633%; }
+.jejumap-item:nth-child(6) .jejumap-item-title { top: 0%; left: 6%; min-width: 45px; }
+
+.jejumap-item:nth-child(7) {
+    left: 5%; top: 67%;
+    width: 65px; height: 51px;
+}
+.jejumap-item:nth-child(7) .mapshape { background-position: 0.551% 25.7%; }
+.jejumap-item:nth-child(7) .jejumap-check:checked + .mapshape { background-position: 0.552% 84.956%; }
+.jejumap-item:nth-child(7) .jejumap-item-title { top: 13%; left: 28%; }
+
+.jejumap-item:nth-child(8) {
+    left: 19.7%; top: 56%;
+    width: 58px; height: 56px;
+}
+.jejumap-item:nth-child(8) .mapshape { background-position: 19.189% 26.439%; }
+.jejumap-item:nth-child(8) .jejumap-check:checked + .mapshape { background-position: 19.215% 86.643%; }
+.jejumap-item:nth-child(8) .jejumap-item-title { top: 9%; left: 12%; }
+
+.jejumap-item:nth-child(9) {
+    left: 33.8%; top: 50%;
+    width: 67px; height: 70px;
+}
+.jejumap-item:nth-child(9) .mapshape { background-position: 36.842% 27.788%; }
+.jejumap-item:nth-child(9) .jejumap-check:checked + .mapshape { background-position: 36.806% 90.909%; }
+.jejumap-item:nth-child(9) .jejumap-item-title { top: 8%; left: 6%; min-width: 58px; min-height: 58px; padding-top: 22px; }
+
+.jejumap-item:nth-child(10) {
+    left: 49.7%; top: 40.5%;
+    width: 70px; height: 81px;
+}
+.jejumap-item:nth-child(10) .mapshape { background-position: 56.983% 29.051%; }
+.jejumap-item:nth-child(10) .jejumap-check:checked + .mapshape { background-position: 56.923% 95.05%; }
+.jejumap-item:nth-child(10) .jejumap-item-title { top: 10%; left: 20%; min-width: 45px; min-height: 60px; padding-top: 25px; }
+
+.jejumap-item:nth-child(11) {
+    left: 60%; top: 27%;
+    width: 72px; height: 84px;
+}
+.jejumap-item:nth-child(11) .mapshape { background-position: 78.09% 29.341%; }
+.jejumap-item:nth-child(11) .jejumap-check:checked + .mapshape { background-position: 78.059% 96%; }
+.jejumap-item:nth-child(11) .jejumap-item-title { top: 11%; left: 32%; min-height: 55px; }
+
+.jejumap-item:nth-child(12) {
+    left: 78.125%; top: 14.5%;
+    width: 56px; height: 91px;
+}
+.jejumap-item:nth-child(12) .mapshape { background-position: 94.899% 30.247%; }
+.jejumap-item:nth-child(12) .jejumap-check:checked + .mapshape { background-position: 94.8% 99.2%; }
+.jejumap-item:nth-child(12) .jejumap-item-title { top: 23%; left: 16%; min-height: 50px; }
+
+.jejumap-item:nth-child(13) {
+    left: 94.6%; top: 13.75%;
+    width: 13px; height: 19px;
+}
+.jejumap-item:nth-child(13) .mapshape { background-position: 99.518% 23.333%; }
+.jejumap-item:nth-child(13) .jejumap-item-title { top: -70%; left: auto; right: 0; width: 33px; min-height: 33px; padding-top: 0; text-align: right; }
+.jejumap-item:nth-child(13) .jejumap-check:checked + .mapshape { background-position: 99.518% 76.2%; }
+.jejumap-item:nth-child(13) .jejumap-check { top: 0; left: -2px; }
+
+.global-footer {
+    margin-top: 3em;
+    padding: 1em 0 2em;
+    border-top: 1px solid #ddd;
+    color: #999;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.cafe-item {
+    margin-bottom: 3rem;
+}
+
+.cafe-item-info h2 {
+    margin: 0.5em 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.cafe-item-contact {
+    margin-top: 1em;
+    font-size: 0.8rem;
+}
+
+.cafe-item-contact li {
+    margin: 0.5em 0;
+}
+
+.cafe-item-contact i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+
+.content-section {
+    margin: 2em 0;
+}
+
+.page-content h1 {
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.page-content h2 {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
+
+.page-content p {
+    line-height: 1.6;
+}
+
+.form-row {
+    margin-bottom: 1.5em;
+}
+
+.form-row-btn-con {
+    text-align: center;
+}
+
+.form-row-content {
+    display: flex;
+    align-items: center;
+}
+
+.form-row-label {
+    width: 30%;
+}
+
+.form-row-input {
+    flex: 1;
+}
+
+.form-row-input input[type='text'],
+.form-row-input input[type='password'],
+.form-row-input input[type='search'],
+.form-row-input input[type='email'] {
+    width: 100%;
+}
+
+.form-row-input label {
+    white-space: nowrap;
+}
+
+@media (min-width: 800px) {
+    body {
+        min-height: 100%;
+    }
+
+    .grid {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .content-area {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .global-header > .grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .global-header .logo {
+        position: static;
+        transform: none;
+    }
+
+    .global-menu-btn {
+        display: none;
+    }
+
+    .global-menu,
+    body.menu-on .global-menu {
+        display: flex;
+        align-items: center;
+        position: static;
+        width: auto;
+        padding: 0;
+        background: transparent;
+    }
+
+    .global-menu a {
+        padding: 0 1em;
+    }
+
+    .global-menu-nav {
+        display: flex;
+        margin-top: 0;
+    }
+
+    .global-menu-nav ul {
+        display: flex;
+    }
+
+    .search-cafe-form {
+        margin-top: 0;
+        margin-left: 3rem;
+    }
+
+    .cafe-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .cafe-item-photo {
+        flex: 6;
+        margin-right: 2rem;
+    }
+
+    .cafe-item-info {
+        flex: 4;
+    }
+
+    .jejumap-header {
+        font-size: 1.5rem;
+    }
+
+    .jejumap-container {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .big-btn {
+        display: inline-flex;
+        padding: 0.5em 3em;
+        font-size: 1.2rem;
+    }
+
+    .jejumap-container {
+        text-align: center;
+    }
+
+    .main-copy {
+        font-size: 2.5rem;
+        letter-spacing: -0.05em;
+        word-spacing: 0.05em;
+    }
+
+    .cafe-item-info h2 {
+        margin-top: -1em;
+        font-size: 2.5rem;
+        letter-spacing: -0.05em;
+        word-spacing: 0.05em;
+    }
+
+    .cafe-item-photo {
+        margin-right: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

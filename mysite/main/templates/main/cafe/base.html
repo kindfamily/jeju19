@@ -1,0 +1,35 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>제주카페찾기</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script type="text/javascript">
+  WebFont.load({
+    // For google fonts
+    google: {
+      families: ['Noto Sans KR', 'Roboto']
+    }
+  });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+    
+<style>
+   #map {
+    height: 400px;
+    width: 100%;
+   }
+</style>
+</head>
+
+{% block content %}
+{% endblock %}
+
+</html>

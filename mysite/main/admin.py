@@ -1,8 +1,11 @@
 from django.contrib import admin
-from .models import Member, Faq
+from .models import Cafe
 
-admin.site.register(Member)
-admin.site.register(Faq)
+admin.site.register(Cafe)
+
+
+# admin.site.register(Member)
+# admin.site.register(Faq)
 
 # jeongwonbong
 # jeongwonbong1!

@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from .models import Member, Faq
-# from .forms import CafeForm
+from .models import Cafe
+from .forms import CafeForm
+
+# 제주카페찾기 사이트 관련 함수
 
 def index(request):
     if request.method == "POST":
@@ -25,39 +27,43 @@ def index(request):
                 if cafetag[0]['name'] == key:
                     cafelistobj.append(cafelist)
         print(cafelistobj)
-        return render(request, 'main/cafelist.html', {'cafelistobj':cafelistobj})
+        return render(request, 'main/cafe/cafelist.html', {'cafelistobj':cafelistobj})
     return render(request, 'main/index.html')
 
-def about(request):
-    return render(request, 'main/about.html')
 
-def write(request):
-    form = CafeForm()
-    return render(request, 'main/write.html', {'form': form})
+def cafeindex(request):
+    return render(request, 'main/cafe/cafeindex.html')
+
+def about(request):
+    return render(request, 'main/cafe/about.html')
 
 def cafelist(request):
     cafelistobj = Cafe.objects.all()
-    if request.method == "GET":
-        form = CafeForm(request.POST, request.FILES)
-        if form.is_valid():
-            cafe = form.save(commit=False)
-            cafe.save()
-            return render(request, 'main/cafedetails.html', {'cafeobj': cafe})
-    return render(request, 'main/cafelist.html', {'cafelistobj':cafelistobj})
+    # if request.method == "GET":
+    #     form = CafeForm(request.POST, request.FILES)
+    #     if form.is_valid():
+    #         cafe = form.save(commit=False)
+    #         cafe.save()
+    #         return render(request, 'main/cafe/cafedetails.html', {'cafeobj': cafe})
+    return render(request, 'main/cafe/cafelist.html', {'cafelistobj':cafelistobj})
+
+def write(request):
+    form = CafeForm()
+    return render(request, 'main/cafe/write.html', {'form': form})
 
 def cafedetails(request, pk):
     cafeobj = Cafe.objects.get(pk=pk)
-    return render(request, 'main/cafedetails.html', {'cafeobj':cafeobj})
+    return render(request, 'main/cafe/cafedetails.html', {'cafeobj':cafeobj})
+
 
 # 회원 목록 받아서 탬플렛으로 보내주기 함수
-def memberlist(request):
-    memberlistobj = Member.objects.all()
-  
-    return render(request, 'main/memberlist.html', {'memberlist':memberlistobj})
+# def memberlist(request):
+#     memberlistobj = Member.objects.all()  
+#     return render(request, 'main/memberlist.html', {'memberlist':memberlistobj})
 
 # FAQ의 목록 받아서 탬플렛으로 보내주기 함수
-def faqlist(request):
-    faqlistobj = Faq.objects.all()
-    return render(request, 'main/faq.html', {'faqlistobj':faqlistobj})
+# def faqlist(request):
+#     faqlistobj = Faq.objects.all()
+#     return render(request, 'main/faq.html', {'faqlistobj':faqlistobj})
 
 

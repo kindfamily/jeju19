@@ -1,4 +1,4 @@
-{% extends "main/base.html" %}
+{% extends "main/cafe/base.html" %}
 
 {% block content %}
 {% load staticfiles %}
@@ -11,20 +11,20 @@
                 <i class="fas fa-bars"></i>
                 <span class="btn-label">메뉴</span>
             </button>
-            <a class="logo" href="/">
+            <a class="logo" href="/cafe">
                 <img src="{% static 'images/logo.png' %}" alt="제주카페찾기">
             </a>
             <div class="global-menu">
                 <nav class="global-menu-nav">
                     <ul>
                         <li class="menu-item-about">
-                            <a href="/about">서비스 소개</a>
+                            <a href="/cafe/about">서비스 소개</a>
                         </li>
                         <li class="menu-item-list">
-                            <a href="/cafelist">카페들</a>
+                            <a href="/cafe/cafelist">카페들</a>
                         </li>
                     </ul>
-                    <a href="/write" class="add-cafe-btn">
+                    <a href="/cafe/write" class="add-cafe-btn">
                         <i class="fas fa-plus"></i>
                         <span class="btn-label">카페등록</span>
                     </a>

@@ -1,0 +1,147 @@
+{% extends "main/cafe/base.html" %}
+
+{% block content %}
+{% load staticfiles %}
+<body class="page-home">
+<div class="jejucafe-container">
+    <!-- global-header 시작 -->
+    <header class="global-header">
+        <div class="grid">
+            <button class="global-menu-btn">
+                <i class="fas fa-bars"></i>
+                <span class="btn-label">메뉴</span>
+            </button>
+            <a class="logo" href="/cafe/">
+                <img src="{% static 'images/logo.png' %}" alt="제주카페찾기">
+            </a>
+            <div class="global-menu">
+                <nav class="global-menu-nav">
+                    <ul>
+                        <li class="menu-item-about">
+                            <a href="/cafe/about">서비스 소개</a>
+                        </li>
+                        <li class="menu-item-list">
+                            <a href="/cafe/cafelist">카페들</a>
+                        </li>
+                    </ul>
+                    <a href="/cafe/write" class="add-cafe-btn">
+                        <i class="fas fa-plus"></i>
+                        <span class="btn-label">카페등록</span>
+                    </a>
+                </nav>
+                <form class="search-cafe-form text-input-and-btn">
+                    <div class="input-wrapper">
+                        <input type="search" placeholder="찾고 싶은 카페 이름">
+                    </div>
+                    <button class="icon-btn search-cafe-form-btn">
+                        <i class="fas fa-search"></i>
+                        <span class="btn-label">카페찾기</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- global-header 끝 -->
+
+    <!-- content-area 시작 -->
+    <div class="content-area">
+        <!-- jejumap-container 시작 -->
+        <section class="jejumap-container">
+            <div class="grid">
+                <form method="POST">
+                {% csrf_token %}
+                <header class="jejumap-header">
+                    <h1 class="main-copy">지도에서 원하는 지역을 선택하세요!</h1>
+                    <p>선택하지 않으면 전체 지역에서 찾습니다</p>
+                </header>
+                <div class="jejumap">
+                    <div class="jejumap-items">
+                        <div class="jejumap-item" id="jejumap-item-hangyeong">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-1" data-city="notJcity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-1">한경면</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-hanlim">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-2" data-city="notJcity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-2">한림읍</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-aewol">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-3" data-city="notJcity" name="aewol">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-3">애월읍</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-jeju">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-0" data-city="Jcity" name="jejusi">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-0">제주시</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-jocheon">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-4" data-city="notJcity" name="jocheon">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-4">조천읍</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-gujwa">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-5" data-city="notJcity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-5">구좌읍</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-daejeong">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-9" data-city="notScity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-9">대정읍</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-andeok">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-10" data-city="notScity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-10">안덕면</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-seogwipo">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-8" data-city="Scity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-8">서귀포시</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-namwon">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-11" data-city="notScity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-11">남원읍</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-pyoseon">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-12" data-city="notScity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-12">표선면</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-seongsan">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-13" data-city="notScity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-13">성산읍</label>
+                        </div>
+                        <div class="jejumap-item" id="jejumap-item-udo">
+                            <input type="checkbox" class="jejumap-check te-elem" id="check-area-6" data-city="notJcity">
+                            <div class="mapshape"></div>
+                            <label class="jejumap-item-title te-elem" for="check-area-6">우도면</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn big-btn search-map-btn">카페찾기!</button>
+                </form>
+            </div>
+        </section>
+        <!-- jejumap-container 끝 -->
+    </div>
+    <!-- content-area 끝 -->
+
+    <!-- global-footer 시작 -->
+    <footer class="global-footer">
+        <div class="grid">
+            <p class="copyright">
+                2018 &copy; 제주카페찾기
+            </p>
+        </div>
+    </footer>
+    <!-- global-footer 끝 -->
+</div>
+
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+{% endblock content %}

@@ -39,12 +39,12 @@ def about(request):
 
 def cafelist(request):
     cafelistobj = Cafe.objects.all()
-    # if request.method == "GET":
-    #     form = CafeForm(request.POST, request.FILES)
-    #     if form.is_valid():
-    #         cafe = form.save(commit=False)
-    #         cafe.save()
-    #         return render(request, 'main/cafe/cafedetails.html', {'cafeobj': cafe})
+    if request.method == "POST":
+        form = CafeForm(request.POST, request.FILES)
+        if form.is_valid():
+            cafe = form.save(commit=False)
+            cafe.save()
+            return render(request, 'main/cafe/cafedetails.html', {'cafeobj': cafe})
     return render(request, 'main/cafe/cafelist.html', {'cafelistobj':cafelistobj})
 
 def write(request):

@@ -18,13 +18,13 @@
                 <nav class="global-menu-nav">
                     <ul>
                         <li class="menu-item-about">
-                            <a href="/about">서비스 소개</a>
+                            <a href="/cafe/about">서비스 소개</a>
                         </li>
                         <li class="menu-item-list">
-                            <a href="/cafelist">카페들</a>
+                            <a href="/cafe/cafelist">카페들</a>
                         </li>
                     </ul>
-                    <a href="/write" class="add-cafe-btn">
+                    <a href="/cafe/write" class="add-cafe-btn">
                         <i class="fas fa-plus"></i>
                         <span class="btn-label">카페등록</span>
                     </a>
@@ -57,7 +57,7 @@
                         {% endif %}
                     </figure>
                     <div class="cafe-item-info">
-                        <a href="https://djangotutowonbong-rigug.run.goorm.io/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.name}}</h2></a>
+                        <a href="https://djangotutowonbong-rigug.run.goorm.io/cafe/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.name}}</h2></a>
                         <p>개발자와 디자이너들을 위한 카페에요.</p>
                         <ul class="cafe-item-contact">
                             <li>

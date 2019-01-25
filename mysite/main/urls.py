@@ -19,12 +19,16 @@ from django.urls import path
 from main.views import index, about, write, cafelist, cafedetails, cafeindex
 from django.conf.urls.static import static
 from django.conf import settings
-from django.urls import include
-
 
 urlpatterns = [
- path('', index),   
- path('cafe/', include('main.urls')), # main app 의 urls.py 파일을 찾는다
+    path('admin/', admin.site.urls),
+    path('', cafeindex),
+    path('write/', write),
+    path('cafelist/', cafelist),    
+    path('about/', about),
+    path('cafelist/<int:pk>', cafedetails),   
+    # path('faq/', faqlist),
+    # path('memberlist/', memberlist),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

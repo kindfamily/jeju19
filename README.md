@@ -40,67 +40,6 @@ d : delet
     
     python manage.py makemigrations & migrate # db변경 되면 입력해야하는 명령
     
-
-
-
-
-
-
-
-
-
-
-
-## 로컬pc에서 설정방법
-** 진행도중 오류가 많이 발생할것으로 생각됩니다 가급적 구름 ide에서 작업하시길 권장드립니다
-
-** 문제 발생시 이슈를 공유해 주세요 (일종에 게시판 같은기능 인것? 같아요 ㅋㅋ실제는 어떻게 쓴느지 모르겠지만요)
-
-
-+ 깃헙fork
-
-요버튼 클릭해주세요 
-
-<img width="200" src="https://user-images.githubusercontent.com/12974446/51506545-246e9080-1e30-11e9-8fb0-84912434e068.png">
-
-
-+ 깃헙다운 및 설정
-
-** git clone [ 클론주소 ]
-** git clone https://github.com/tuntunkimpo/jeju19.git
-
-    cd jeju19 # 경로이동
-    
-    cd mysite # 경로이동
-
-    pip3 install virtualenv # 가상환경 프로그램 설치
-    
-    virtualenv myvenv # 가상환경 설정
-    
-    source myvenv/bin/activate # 가상환경으로 진입
-    
-    pip3 install django==2.1 # 장고 2.1버전 설치인것으로 보임
-    
-    pip3 install pillow==2.9.0 # 뭔지 모르겠음 ㅠ ㅠ 
-    
-    pip3 install django-taggit # 뭔지 모르겠음 ㅠ ㅠ    
-    
-    python manage.py makemigrations & migrate # db변경 되면 입력해야하는 명령    
-
-이슈버튼은 요렇게 생겼어요 
-
-요버튼 눌러서 작성해주시면 됩니다. 이슈는 관련내용을 따라하면서 안되는 것을 적는 겁니다. 형식은 따로 있는건 아니니 아무거나 막 적어주시면 누군가 해결해 줄수도 있습니다. 다만 가능한 구체적으로 적어 주시면더 좋겠지요 
-
-<img width="800" src="https://user-images.githubusercontent.com/12974446/51507363-ec694c80-1e33-11e9-8711-1c3de1fa4a54.png">
-
-+ python 설치
-* 설치를 완료 해야 pip3 명령어 사용가능
-[설치링크](https://www.python.org/downloads/)
-
-git&github 설정 ( 작성 예정 )
-
-
-
 ## 장고어드민 계정 생성 명령어 
 
     python manage.py createsuperuser

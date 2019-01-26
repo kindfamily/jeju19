@@ -44,3 +44,10 @@ d : delet
 
     python manage.py createsuperuser
 
+## 제주코딩베이스 캠프 2019 강사님들 소스
+
+[범재님-부트스트랩](https://github.com/beomjae/jejucafe-bootstrap)
+
+[준모님-css&js](https://github.com/tuntunkimpo/junmonim)
+
+[호준님-장고](https://github.com/tuntunkimpo/hojunnim)

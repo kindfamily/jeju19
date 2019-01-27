@@ -4,4 +4,4 @@ from .models import Cafe
 class CafeForm(forms.ModelForm):
     class Meta:
         model = Cafe
-        fields = ('name', 'lat', 'lng', 'mainphoto', 'subphoto', 'content', 'locate', 'phone', 'insta',)
+        fields = ('이름', '위도', '경도', '메인사진', '서브사진', '소개', '위치', '전화', '인스타',)

@@ -52,25 +52,25 @@
                 <!-- 카페 1개 시작 -->
                 <section class="cafe-item">
                     <figure class="cafe-item-photo">
-                        {% if i.mainphoto %}
-                        <img src="{{ i.mainphoto.url }}" alt="">
+                        {% if i.메인사진 %}
+                        <img src="{{ i.메인사진.url }}" alt="">
                         {% endif %}
                     </figure>
                     <div class="cafe-item-info">
-                        <a href="https://djangotutowonbong-rigug.run.goorm.io/cafe/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.name}}</h2></a>
+                        <a href="https://djangotutowonbong-rigug.run.goorm.io/cafe/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.이름}}</h2></a>
                         <p>개발자와 디자이너들을 위한 카페에요.</p>
                         <ul class="cafe-item-contact">
                             <li>
                                 <i class="fas fa-map-marker-alt"></i>
-                                {{i.locate}}
+                                {{i.위치}}
                             </li>
                             <li>
                                 <i class="fas fa-phone"></i>
-                                {{i.phone}}
+                                {{i.전화}}
                             </li>
                             <li>
                                 <i class="fab fa-instagram"></i>
-                                {{i.insta}}
+                                {{i.인스타}}
                             </li>
                         </ul>
                     </div>

@@ -4,21 +4,21 @@ from taggit.managers import TaggableManager
 # 기존 cafe 입력 폼 
 
 class Cafe(models.Model):
-    name = models.CharField(max_length = 50)
-    lat = models.FloatField(null=True)
-    lng = models.FloatField(null=True)
-    mainphoto = models.ImageField(blank=True, null=True)
-    subphoto = models.ImageField(blank=True, null=True)
+    이름 = models.CharField(max_length = 50)
+    위도 = models.FloatField(null=True)
+    경도 = models.FloatField(null=True)
+    메인사진 = models.ImageField(blank=True, null=True)
+    서브사진 = models.ImageField(blank=True, null=True)
     publishedDate = models.DateTimeField(blank=True, null=True)
     modifiedDate = models.DateTimeField(blank=True, null=True)   # blank=True는 어드민 계정으로 접속했을 때 빈칸이 없어야 한다는 
-    content = models.TextField()
-    locate = models.TextField(null=True)
-    phone = models.TextField(null=True)
-    insta = models.TextField(null=True)
+    소개 = models.TextField()
+    위치 = models.TextField(null=True)
+    전화 = models.TextField(null=True)
+    인스타 = models.TextField(null=True)
     tag = TaggableManager(blank=True)   # tag 만 관리하는 라이브러리
     
     def __str__(self):
-        return self.name
+        return self.이름
 
     
 # 자동생성 폼 입력 모듈 클래스

@@ -1,0 +1,7 @@
+form > li {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    margin: 1em;
+    
+}

@@ -11,7 +11,7 @@
                 <i class="fas fa-bars"></i>
                 <span class="btn-label">메뉴</span>
             </button>
-            <a class="logo" href="/">
+            <a class="logo" href="/cafe">
                 <img src="{% static 'images/logo.png' %}" alt="제주카페찾기">
             </a>
             <div class="global-menu">
@@ -57,7 +57,7 @@
                         {% endif %}
                     </figure>
                     <div class="cafe-item-info">
-                        <a href="https://djangotutowonbong-rigug.run.goorm.io/cafe/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.이름}}</h2></a>
+                        <a href="/cafe/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.이름}}</h2></a>
                         <p>개발자와 디자이너들을 위한 카페에요.</p>
                         <ul class="cafe-item-contact">
                             <li>

@@ -11,7 +11,7 @@
                 <i class="fas fa-bars"></i>
                 <span class="btn-label">메뉴</span>
             </button>
-            <a class="logo" href="/">
+            <a class="logo" href="/cafe">
                 <img src="{% static 'images/logo.png' %}" alt="제주카페찾기">
             </a>
             <div class="global-menu">
@@ -48,20 +48,20 @@
         <!-- 소개 페이지 내용 시작 -->
         <div class="grid">
         <header>
-                <h1>{{cafeobj.name}}</h1>
+                <h1>{{cafeobj.이름}}</h1>
         <br>
         <div class="slideshow-container">
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 2</div>
-          <img src="{{ cafeobj.mainphoto.url }}" style="height:50%">
+          <img src="{{ cafeobj.메인사진.url }}" style="height:50%">
           <div class="text">Caption Text</div>
         </div>
 
-        {% if cafeobj.subphoto %}
+        {% if cafeobj.서브사진 %}
         <div class="mySlides fade">
           <div class="numbertext">2 / 2</div>
-          <img src="{{ cafeobj.subphoto.url }}" style="height:100%">
+          <img src="{{ cafeobj.서브사진.url }}" style="height:100%">
           <div class="text">Caption Two</div>
         </div>
         {% endif %}
@@ -84,18 +84,18 @@
           <ul class="cafe-item-contact">
             <li>
                 <i class="fas fa-map-marker-alt"></i>
-                {{cafeobj.locate}}
+                {{cafeobj.위치}}
             </li>
             <li>
                 <i class="fas fa-phone"></i>
-                {{cafeobj.phone}}
+                {{cafeobj.전화}}
             </li>
             <li>
                 <i class="fab fa-instagram"></i>
-                {{cafeobj.insta}}
+                {{cafeobj.인스타}}
             </li>
             <li>
-              <p>{{cafeobj.content|linebreaks}}</p>
+              <p>{{cafeobj.소개|linebreaks}}</p>
             </li>
           </ul>
         </div>

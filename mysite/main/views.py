@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Cafe
 from .forms import CafeForm
+
+
 
 # 제주카페찾기 사이트 관련 함수
 
@@ -47,13 +49,30 @@ def cafelist(request):
             return render(request, 'main/cafe/cafedetails.html', {'cafeobj': cafe})
     return render(request, 'main/cafe/cafelist.html', {'cafelistobj':cafelistobj})
 
+def cafedetails(request, pk):
+    cafeobj = Cafe.objects.get(pk=pk)
+    return render(request, 'main/cafe/cafedetails.html', {'cafeobj':cafeobj})
+
 def write(request):
     form = CafeForm()
     return render(request, 'main/cafe/write.html', {'form': form})
 
-def cafedetails(request, pk):
-    cafeobj = Cafe.objects.get(pk=pk)
-    return render(request, 'main/cafe/cafedetails.html', {'cafeobj':cafeobj})
+def cafe_update(request, pk):
+    cafe = get_object_or_404(Cafe, pk=pk)
+    form = CafeForm(request.POST or None, instance=cafe)
+    if form.is_valid():
+        form.save()
+        return redirect('cafelist')
+    return render(request, 'main/cafe/write.html', {'form':form})
+
+# def book_update(request, pk, template_name='books/book_form.html'):
+#     book= get_object_or_404(Book, pk=pk)
+#     form = BookForm(request.POST or None, instance=book)
+#     if form.is_valid():
+#         form.save()
+#         return redirect('book_list')
+#     return render(request, template_name, {'form':form})
+
 
 
 # 회원 목록 받아서 탬플렛으로 보내주기 함수

@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # from main.views import index, about, write, cafelist, cafedetails, memberlist, faqlist, cafeindex
-from main.views import index, about, write, cafelist, cafedetails, cafeindex
+from main.views import index, about, write, cafelist, cafedetails, cafeindex, cafe_update
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -27,6 +27,8 @@ urlpatterns = [
     path('cafelist/', cafelist),    
     path('about/', about),
     path('cafelist/<int:pk>', cafedetails),   
+    path('edit/<int:pk>', cafe_update, name='book_edit'),
+
     # path('faq/', faqlist),
     # path('memberlist/', memberlist),
 ]

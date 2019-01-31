@@ -20,6 +20,9 @@ class Cafe(models.Model):
     def __str__(self):
         return self.이름
 
+    def get_absolute_url(self):
+        return reverse('book_edit', kwargs={'pk': self.pk})
+
     
 # 자동생성 폼 입력 모듈 클래스
 # from django.db import models

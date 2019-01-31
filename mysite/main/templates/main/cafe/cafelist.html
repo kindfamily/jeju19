@@ -57,7 +57,7 @@
                         {% endif %}
                     </figure>
                     <div class="cafe-item-info">
-                        <a href="/cafe/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.이름}}</h2></a>
+                        <a href="/cafe/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.pk}} {{i.이름}}</h2></a>
                         <p>개발자와 디자이너들을 위한 카페에요.</p>
                         <ul class="cafe-item-contact">
                             <li>
@@ -71,6 +71,9 @@
                             <li>
                                 <i class="fab fa-instagram"></i>
                                 {{i.인스타}}
+                            </li>
+                            <li>
+                               <td><a href="{% url 'book_edit' i.id %}">edit</a></td>
                             </li>
                         </ul>
                     </div>

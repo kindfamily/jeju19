@@ -1,3 +1,5 @@
+# import pdb 
+# pdb.set_trace() 파이썬 디버깅 방법 원하는 곳에 코드 넣기
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Cafe
 from .forms import CafeForm

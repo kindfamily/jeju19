@@ -1,5 +1,7 @@
 from django.db import models
 from taggit.managers import TaggableManager
+from django.urls import reverse
+
 
 # 기존 cafe 입력 폼 
 

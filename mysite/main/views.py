@@ -55,17 +55,19 @@ def cafedetails(request, pk):
     cafeobj = Cafe.objects.get(pk=pk)
     return render(request, 'main/cafe/cafedetails.html', {'cafeobj':cafeobj})
 
-def write(request):
-    form = CafeForm()
-    return render(request, 'main/cafe/write.html', {'form': form})
 
 def cafe_update(request, pk):
+    cafeobj = Cafe.objects.get(pk=pk)
     cafe = get_object_or_404(Cafe, pk=pk)
     form = CafeForm(request.POST or None, instance=cafe)
     if form.is_valid():
         form.save()
-        return redirect('cafelist')
-    return render(request, 'main/cafe/write.html', {'form':form})
+        return redirect('../cafelist')
+    return render(request, 'main/cafe/update.html', {'form':form, 'cafeobj':cafeobj})
+
+def write(request):
+    form = CafeForm()
+    return render(request, 'main/cafe/write.html', {'form': form})
 
 # def book_update(request, pk, template_name='books/book_form.html'):
 #     book= get_object_or_404(Book, pk=pk)

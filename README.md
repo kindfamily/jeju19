@@ -34,9 +34,9 @@ d : delet
     
     cd mysite # 경로이동
     
-    pip3 install pillow==2.9.0 # 뭔지 모르겠음 ㅠ ㅠ 
+    pip3 install pillow==2.9.0 # 이미지처리 패키지
     
-    pip3 install django-taggit # 뭔지 모르겠음 ㅠ ㅠ 
+    pip3 install django-taggit # 태그관리 패키지
     
     python manage.py makemigrations & migrate # db변경 되면 입력해야하는 명령
     

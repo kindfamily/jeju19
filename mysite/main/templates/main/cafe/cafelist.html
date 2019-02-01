@@ -24,7 +24,7 @@
                             <a href="/cafe/cafelist">카페들</a>
                         </li>
                     </ul>
-                    <a href="/cafe/write" class="add-cafe-btn">
+                    <a href="/cafe/new" class="add-cafe-btn">
                         <i class="fas fa-plus"></i>
                         <span class="btn-label">카페등록</span>
                     </a>
@@ -57,7 +57,10 @@
                         {% endif %}
                     </figure>
                     <div class="cafe-item-info">
-                        <a href="/cafe/cafelist/{{i.pk}}" style="text-decoration:none"><h2>{{i.pk}} {{i.이름}}</h2></a>
+                        <a href="{% url 'cafe_list' i.id %}" style="text-decoration:none"><h1>{{i.이름}}</h1></a>
+                        <div>
+                            글번호: {{i.pk}} 
+                        </div>
                         <p>개발자와 디자이너들을 위한 카페에요.</p>
                         <ul class="cafe-item-contact">
                             <li>
@@ -73,7 +76,10 @@
                                 {{i.인스타}}
                             </li>
                             <li>
-                               <td><a href="{% url 'book_edit' i.id %}">edit</a></td>
+                               <td><a href="{% url 'cafe_edit' i.id %}">edit</a></td>
+                            </li>
+                            <li>
+                               <td><a href="{% url 'cafe_delete' i.id %}">delete</a></td>
                             </li>
                         </ul>
                     </div>

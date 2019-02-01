@@ -1,13 +1,122 @@
-<style>
-    div{
-        display: block;
-        width: 400px;
-        margin: 100px auto;
-      }
-</style>
-<div>
-    <h1>
-        01-제주카페찾기 + crud
-    </h1>
-    <a href="cafe">cafe예제</a>    
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container{
+            display: block;
+            width: 550px;
+            margin: 100px auto;
+          }
+        li{
+            list-style: none;
+        }
+
+        /* 아코디언메뉴 */
+        .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 10px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.1s;
+        }
+
+        .active, .accordion:hover {
+          background-color: #ccc;
+        }
+
+        .accordion:after {
+          content: '\002B';
+          color: #777;
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+        }
+
+        .active:after {
+          content: "\2212";
+        }
+
+        .panel {
+          padding: 0 18px;
+          background-color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            00-제주카페찾기(django + crud)
+        </h1>        
+        <ul>
+          <li>**템플릿: main>cafe</li>
+          <li>**진행상황: 😅<a href="cafe">작동가능(코드개선중)</a></li>
+        </ul>
+        <button class="accordion">참고자료</button>
+        <div class="panel">
+          <ul>
+              <li><a href="https://github.com/tuntunkimpo/hojunnim">호준님예제</a></li>
+              <li><a href="https://rayed.com/posts/2018/05/django-crud-create-retrieve-update-delete/">블로그</a></li>
+              <li><a href="https://docs.djangoproject.com/ko/2.1/">장고문서(한글)</a></li>
+          </ul>
+        </div>
+
+        <button class="accordion">새로알게된내용</button>
+        <div class="panel">
+          <h2>
+            github  
+          </h2>
+          <ul>
+              <li>project, wiki, issue을 사용하면 저장소가 커뮤니티의 기능이 가능할 것같다</li>
+              <li>ms 인수 이후 달라진점 : 커뮤니티 기능 강화, 개인 저장소 개설 및 개인저장소는 pages가 유료다</li>
+          </ul>
+          <h2>
+            django
+          </h2>
+          <ul>
+              <li>url.py는 분기 할수 있다 두둥!!</li>
+              <li>url.py path에 name 을 지정하면 손쉽게 링크를 만들수 있다</li>
+              <li>form field 이름을 한글로 지정 할수 있다</li>
+              <li>가상환경은 폴더로 만들어지고 저장소(github)에 올려서 다른 환경에 넣을때 다운받은후 간단한 설정만하면 사용할수 있다</li>
+              <li>이미지 파일은 media폴더가 자동으로 생성되서 저장됨</li>
+          </ul>
+          <h2>
+            html, css, js
+          </h2>
+          <ul>
+              <li><a href="https://www.w3schools.com/howto/howto_js_accordion.asp">아코디언</a></li>
+          </ul>     
+        </div>
+        <h1>
+            01-ajax
+        </h1>
+    </div>
+    <script>
+    // 아코디언 메뉴    
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+</body>
+</html>

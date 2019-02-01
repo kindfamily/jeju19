@@ -51,10 +51,12 @@
                 <header>
                     <h1>카페등록</h1>
                 </header>
-                <form method="POST" action="/cafe/edit/{{cafeobj.pk}}" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form.as_ul }}
-                    <button type="submit">submit</button>
+                <h1>Book Delete</h1>
+                <form method="post">{% csrf_token %}
+                    <h1>
+                        Are you sure you want to delete "{{ object }}" ?
+                    </h1>
+                    <input type="submit" value="Submit" />
                 </form>
                 <!--                 
                 <form method="POST" action="/cafe/cafelist/" enctype="multipart/form-data">

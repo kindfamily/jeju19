@@ -55,6 +55,9 @@ def cafedetails(request, pk):
     cafeobj = Cafe.objects.get(pk=pk)
     return render(request, 'main/cafe/cafedetails.html', {'cafeobj':cafeobj})
 
+def new(request):
+    form = CafeForm()
+    return render(request, 'main/cafe/write.html', {'form': form})
 
 def cafe_update(request, pk):
     cafeobj = Cafe.objects.get(pk=pk)
@@ -65,9 +68,12 @@ def cafe_update(request, pk):
         return redirect('../cafelist')
     return render(request, 'main/cafe/update.html', {'form':form, 'cafeobj':cafeobj})
 
-def write(request):
-    form = CafeForm()
-    return render(request, 'main/cafe/write.html', {'form': form})
+def cafe_delete(request, pk, template_name='main/cafe/cafe_confirm_delete.html'):
+    cafe= get_object_or_404(Cafe, pk=pk)
+    if request.method=='POST':
+        cafe.delete()
+        return redirect('../cafelist')
+    return render(request, template_name, {'object':cafe})
 
 # def book_update(request, pk, template_name='books/book_form.html'):
 #     book= get_object_or_404(Book, pk=pk)

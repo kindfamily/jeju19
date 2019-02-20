@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'iconfont-currency';
+  src:  url('../fonts/iconfont-currency-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-currency-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-currency-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-currency-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-currency-webfont.svg?hw38j0#iconfont-currency') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-currency {
+  display: inline-block;
+  font-family: 'iconfont-currency' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-currency-bitcoin:before {
+  content: "\e900";
+}
+.if-currency-brazil-real:before {
+  content: "\e901";
+}
+.if-currency-chinese-yuan:before {
+  content: "\e902";
+}
+.if-currency-denmark-krone:before {
+  content: "\e903";
+}
+.if-currency-dollar:before {
+  content: "\e904";
+}
+.if-currency-euro:before {
+  content: "\e905";
+}
+.if-currency-gg:before {
+  content: "\e906";
+}
+.if-currency-gg-circle:before {
+  content: "\e907";
+}
+.if-currency-money:before {
+  content: "\e908";
+}
+.if-currency-mongolian-tugrik:before {
+  content: "\e909";
+}
+.if-currency-nigeria-naira:before {
+  content: "\e90a";
+}
+.if-currency-philippine-peso:before {
+  content: "\e90b";
+}
+.if-currency-poland-zloty:before {
+  content: "\e90c";
+}
+.if-currency-pound:before {
+  content: "\e90d";
+}
+.if-currency-rouble:before {
+  content: "\e90e";
+}
+.if-currency-rupee:before {
+  content: "\e90f";
+}
+.if-currency-rurkish-lira:before {
+  content: "\e910";
+}
+.if-currency-shekel:before {
+  content: "\e911";
+}
+.if-currency-ukraine-hryvnia:before {
+  content: "\e912";
+}
+.if-currency-vietnam-dong:before {
+  content: "\e913";
+}
+.if-currency-won:before {
+  content: "\e914";
+}
+.if-currency-yen:before {
+  content: "\e915";
+}
+

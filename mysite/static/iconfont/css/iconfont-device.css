@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'iconfont-device';
+  src:  url('../fonts/iconfont-device-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-device-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-device-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-device-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-device-webfont.svg?hw38j0#iconfont-device') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-device {
+  display: inline-block;
+  font-family: 'iconfont-device' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-device-3d-printer:before {
+  content: "\e900";
+}
+.if-device-alarm-clock-26:before {
+  content: "\e901";
+}
+.if-device-ar-glasses:before {
+  content: "\e902";
+}
+.if-device-blender:before {
+  content: "\e903";
+}
+.if-device-camcorder:before {
+  content: "\e904";
+}
+.if-device-camera:before {
+  content: "\e905";
+}
+.if-device-cctv:before {
+  content: "\e906";
+}
+.if-device-charger:before {
+  content: "\e907";
+}
+.if-device-coffee-machine:before {
+  content: "\e908";
+}
+.if-device-computer:before {
+  content: "\e909";
+}
+.if-device-drone:before {
+  content: "\e90a";
+}
+.if-device-ebook-reader:before {
+  content: "\e90b";
+}
+.if-device-fan:before {
+  content: "\e90c";
+}
+.if-device-food-steamer:before {
+  content: "\e90d";
+}
+.if-device-fridge:before {
+  content: "\e90e";
+}
+.if-device-game-console:before {
+  content: "\e90f";
+}
+.if-device-game-console-mini:before {
+  content: "\e910";
+}
+.if-device-game-controller:before {
+  content: "\e911";
+}
+.if-device-gps:before {
+  content: "\e912";
+}
+.if-device-hairdryer:before {
+  content: "\e913";
+}
+.if-device-hard-drive:before {
+  content: "\e914";
+}
+.if-device-headphones:before {
+  content: "\e915";
+}
+.if-device-healthcare-device:before {
+  content: "\e916";
+}
+.if-device-iron:before {
+  content: "\e917";
+}
+.if-device-juicer:before {
+  content: "\e918";
+}
+.if-device-kettle:before {
+  content: "\e919";
+}
+.if-device-keyboard:before {
+  content: "\e91a";
+}
+.if-device-laptop:before {
+  content: "\e91b";
+}
+.if-device-meat-grinder:before {
+  content: "\e91c";
+}
+.if-device-memory-card:before {
+  content: "\e91d";
+}
+.if-device-microphone:before {
+  content: "\e91e";
+}
+.if-device-microwave:before {
+  content: "\e91f";
+}
+.if-device-mini-speaker:before {
+  content: "\e920";
+}
+.if-device-mixer:before {
+  content: "\e921";
+}
+.if-device-monitor:before {
+  content: "\e922";
+}
+.if-device-mouse:before {
+  content: "\e923";
+}
+.if-device-music-player:before {
+  content: "\e924";
+}
+.if-device-plug:before {
+  content: "\e925";
+}
+.if-device-printer:before {
+  content: "\e926";
+}
+.if-device-projector:before {
+  content: "\e927";
+}
+.if-device-remote-control:before {
+  content: "\e928";
+}
+.if-device-rice-cooker:before {
+  content: "\e929";
+}
+.if-device-scanner:before {
+  content: "\e92a";
+}
+.if-device-sewing-machine:before {
+  content: "\e92b";
+}
+.if-device-shaver:before {
+  content: "\e92c";
+}
+.if-device-smartphone:before {
+  content: "\e92d";
+}
+.if-device-smart-watch:before {
+  content: "\e92e";
+}
+.if-device-speakers:before {
+  content: "\e92f";
+}
+.if-device-stove:before {
+  content: "\e930";
+}
+.if-device-tablet:before {
+  content: "\e931";
+}
+.if-device-television:before {
+  content: "\e932";
+}
+.if-device-toaster:before {
+  content: "\e933";
+}
+.if-device-usb:before {
+  content: "\e934";
+}
+.if-device-vacuum-cleaner:before {
+  content: "\e935";
+}
+.if-device-voice-recorder:before {
+  content: "\e936";
+}
+.if-device-washing-machine:before {
+  content: "\e937";
+}
+.if-device-webcam:before {
+  content: "\e938";
+}
+.if-device-wifi:before {
+  content: "\e939";
+}
+

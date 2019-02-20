@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'iconfont-warning';
+  src:  url('../fonts/iconfont-warning-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-warning-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-warning-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-warning-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-warning-webfont.svg?hw38j0#iconfont-warning') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-warning {
+  display: inline-block;
+  font-family: 'iconfont-warning' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-warning-donot-touch:before {
+  content: "\e900";
+}
+.if-warning-forbidden:before {
+  content: "\e901";
+}
+.if-warning-forbidden-fire:before {
+  content: "\e902";
+}
+.if-warning-forbidden-fishing:before {
+  content: "\e903";
+}
+.if-warning-forbidden-noise:before {
+  content: "\e904";
+}
+.if-warning-forbidden-parking:before {
+  content: "\e905";
+}
+.if-warning-forbidden-phone:before {
+  content: "\e906";
+}
+.if-warning-forbidden-photo:before {
+  content: "\e907";
+}
+.if-warning-forbidden-swimming:before {
+  content: "\e908";
+}
+.if-warning-no-drinking:before {
+  content: "\e909";
+}
+.if-warning-no-food:before {
+  content: "\e90a";
+}
+.if-warning-no-littering:before {
+  content: "\e90b";
+}
+.if-warning-no-pets:before {
+  content: "\e90c";
+}
+.if-warning-no-smoking:before {
+  content: "\e90d";
+}
+.if-warning-wet-floor:before {
+  content: "\e90e";
+}

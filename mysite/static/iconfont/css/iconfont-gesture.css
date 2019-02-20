@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'iconfont-gesture';
+  src:  url('../fonts/iconfont-gesture-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-gesture-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-gesture-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-gesture-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-gesture-webfont.svg?hw38j0#iconfont-gesture') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-gesture {
+  display: inline-block;
+  font-family: 'iconfont-gesture' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-gesture-2h-rotate-alt:before {
+  content: "\e900";
+}
+.if-gesture-2h-rotate:before {
+  content: "\e901";
+}
+.if-gesture-2h-tap:before {
+  content: "\e902";
+}
+.if-gesture-2h-zoom-in:before {
+  content: "\e903";
+}
+.if-gesture-2h-zoom-out:before {
+  content: "\e904";
+}
+.if-gesture-2x-double-tap:before {
+  content: "\e905";
+}
+.if-gesture-2x-drag-down:before {
+  content: "\e906";
+}
+.if-gesture-2x-flick-left:before {
+  content: "\e907";
+}
+.if-gesture-2x-flick-right:before {
+  content: "\e908";
+}
+.if-gesture-2x-free-drag:before {
+  content: "\e909";
+}
+.if-gesture-2x-horizontal-scroll:before {
+  content: "\e90a";
+}
+.if-gesture-2x-rotate:before {
+  content: "\e90b";
+}
+.if-gesture-2x-tap:before {
+  content: "\e90c";
+}
+.if-gesture-2x-vertical-scroll:before {
+  content: "\e90d";
+}
+.if-gesture-2x-zoom-in:before {
+  content: "\e90e";
+}
+.if-gesture-2x-zoom-out:before {
+  content: "\e90f";
+}
+.if-gesture-3x-double-tap:before {
+  content: "\e910";
+}
+.if-gesture-3x-drag-down:before {
+  content: "\e911";
+}
+.if-gesture-3x-drag-up:before {
+  content: "\e912";
+}
+.if-gesture-3x-flick-left:before {
+  content: "\e913";
+}
+.if-gesture-3x-flick-right:before {
+  content: "\e914";
+}
+.if-gesture-3x-free-drag:before {
+  content: "\e915";
+}
+.if-gesture-3x-horizontal-scroll:before {
+  content: "\e916";
+}
+.if-gesture-3x-pinch:before {
+  content: "\e917";
+}
+.if-gesture-3x-tap:before {
+  content: "\e918";
+}
+.if-gesture-3x-touch-n-hold:before {
+  content: "\e919";
+}
+.if-gesture-4x-double-tap:before {
+  content: "\e91a";
+}
+.if-gesture-4x-drag-down:before {
+  content: "\e91b";
+}
+.if-gesture-4x-drag-up:before {
+  content: "\e91c";
+}
+.if-gesture-4x-flick-left:before {
+  content: "\e91d";
+}
+.if-gesture-4x-flick-right:before {
+  content: "\e91e";
+}
+.if-gesture-4x-free-drag:before {
+  content: "\e91f";
+}
+.if-gesture-4x-horizontal-scroll:before {
+  content: "\e920";
+}
+.if-gesture-4x-pinch-36:before {
+  content: "\e921";
+}
+.if-gesture-4x-pinch-37:before {
+  content: "\e922";
+}
+.if-gesture-4x-tap:before {
+  content: "\e923";
+}
+.if-gesture-5x-double-tap:before {
+  content: "\e924";
+}
+.if-gesture-5x-flick-left:before {
+  content: "\e925";
+}
+.if-gesture-5x-flick-right:before {
+  content: "\e926";
+}
+.if-gesture-5x-free-drag:before {
+  content: "\e927";
+}
+.if-gesture-5x-tap:before {
+  content: "\e928";
+}
+.if-gesture-5x-vertical-scroll:before {
+  content: "\e929";
+}
+.if-gesture-double-tap:before {
+  content: "\e92a";
+}
+.if-gesture-flick-left:before {
+  content: "\e92b";
+}
+.if-gesture-flick-right:before {
+  content: "\e92c";
+}
+.if-gesture-horizontal-scroll:before {
+  content: "\e92d";
+}
+.if-gesture-horizontal-spread-47:before {
+  content: "\e92e";
+}
+.if-gesture-horizontal-spread-53:before {
+  content: "\e92f";
+}
+.if-gesture-measuring-tape:before {
+  content: "\e930";
+}
+.if-gesture-page-move:before {
+  content: "\e931";
+}
+.if-gesture-shuffle:before {
+  content: "\e932";
+}
+.if-gesture-tap:before {
+  content: "\e933";
+}
+.if-gesture-touch-n-hold:before {
+  content: "\e934";
+}
+.if-gesture-vertical-scroll:before {
+  content: "\e935";
+}

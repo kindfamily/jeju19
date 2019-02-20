@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'iconfont-building';
+  src:  url('../fonts/iconfont-building-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-building-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-building-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-building-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-building-webfont.svg?hw38j0#iconfont-building') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-building {
+  display: inline-block;
+  font-family: 'iconfont-building' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-building-airport:before {
+  content: "\e900";
+}
+.if-building-apartment:before {
+  content: "\e901";
+}
+.if-building-bank:before {
+  content: "\e902";
+}
+.if-building-bridge:before {
+  content: "\e903";
+}
+.if-building-building:before {
+  content: "\e904";
+}
+.if-building-bus-stop:before {
+  content: "\e905";
+}
+.if-building-casino:before {
+  content: "\e906";
+}
+.if-building-castle:before {
+  content: "\e907";
+}
+.if-building-church:before {
+  content: "\e908";
+}
+.if-building-coffee-shop:before {
+  content: "\e909";
+}
+.if-building-factory:before {
+  content: "\e90a";
+}
+.if-building-farm:before {
+  content: "\e90b";
+}
+.if-building-fuel-station:before {
+  content: "\e90c";
+}
+.if-building-home:before {
+  content: "\e90d";
+}
+.if-building-hospital:before {
+  content: "\e90e";
+}
+.if-building-hotel:before {
+  content: "\e90f";
+}
+.if-building-islamic-cemetery:before {
+  content: "\e910";
+}
+.if-building-library:before {
+  content: "\e911";
+}
+.if-building-mosque:before {
+  content: "\e912";
+}
+.if-building-museum:before {
+  content: "\e913";
+}
+.if-building-port:before {
+  content: "\e914";
+}
+.if-building-post-office:before {
+  content: "\e915";
+}
+.if-building-prison:before {
+  content: "\e916";
+}
+.if-building-radio-station:before {
+  content: "\e917";
+}
+.if-building-restaurant:before {
+  content: "\e918";
+}
+.if-building-salon:before {
+  content: "\e919";
+}
+.if-building-school:before {
+  content: "\e91a";
+}
+.if-building-sea-dyke:before {
+  content: "\e91b";
+}
+.if-building-shop:before {
+  content: "\e91c";
+}
+.if-building-stadium:before {
+  content: "\e91d";
+}
+.if-building-store:before {
+  content: "\e91e";
+}
+.if-building-tv-station:before {
+  content: "\e91f";
+}
+.if-building-university:before {
+  content: "\e920";
+}

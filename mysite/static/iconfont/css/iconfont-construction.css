@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'iconfont-construction';
+  src:  url('../fonts/iconfont-construction-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-construction-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-construction-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-construction-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-construction-webfont.svg?hw38j0#iconfont-construction') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-construction {
+  display: inline-block;
+  font-family: 'iconfont-construction' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-construction-axe:before {
+  content: "\e900";
+}
+.if-construction-band-saw:before {
+  content: "\e901";
+}
+.if-construction-barrier:before {
+  content: "\e902";
+}
+.if-construction-brick-wall:before {
+  content: "\e903";
+}
+.if-construction-bucket:before {
+  content: "\e904";
+}
+.if-construction-bulldozer:before {
+  content: "\e905";
+}
+.if-construction-caulk-gun:before {
+  content: "\e906";
+}
+.if-construction-chainsaw:before {
+  content: "\e907";
+}
+.if-construction-clamp:before {
+  content: "\e908";
+}
+.if-construction-compressor:before {
+  content: "\e909";
+}
+.if-construction-cone:before {
+  content: "\e90a";
+}
+.if-construction-crane:before {
+  content: "\e90b";
+}
+.if-construction-cutter:before {
+  content: "\e90c";
+}
+.if-construction-digger:before {
+  content: "\e90d";
+}
+.if-construction-door:before {
+  content: "\e90e";
+}
+.if-construction-drill:before {
+  content: "\e90f";
+}
+.if-construction-electric-saw:before {
+  content: "\e910";
+}
+.if-construction-flashlight:before {
+  content: "\e911";
+}
+.if-construction-gas-pipe:before {
+  content: "\e912";
+}
+.if-construction-gears:before {
+  content: "\e913";
+}
+.if-construction-glue:before {
+  content: "\e914";
+}
+.if-construction-hammer:before {
+  content: "\e915";
+}
+.if-construction-hook:before {
+  content: "\e916";
+}
+.if-construction-jackhammer:before {
+  content: "\e917";
+}
+.if-construction-ladder:before {
+  content: "\e918";
+}
+.if-construction-level:before {
+  content: "\e919";
+}
+.if-construction-lifting:before {
+  content: "\e91a";
+}
+.if-construction-light-bulb:before {
+  content: "\e91b";
+}
+.if-construction-measuring-tape:before {
+  content: "\e91c";
+}
+.if-construction-nail-gun:before {
+  content: "\e91d";
+}
+.if-construction-nails:before {
+  content: "\e91e";
+}
+.if-construction-paint-brush:before {
+  content: "\e91f";
+}
+.if-construction-paint-roller:before {
+  content: "\e920";
+}
+.if-construction-pantone:before {
+  content: "\e921";
+}
+.if-construction-pencil:before {
+  content: "\e922";
+}
+.if-construction-pin-tool:before {
+  content: "\e923";
+}
+.if-construction-pipe:before {
+  content: "\e924";
+}
+.if-construction-piston:before {
+  content: "\e925";
+}
+.if-construction-plier:before {
+  content: "\e926";
+}
+.if-construction-plug:before {
+  content: "\e927";
+}
+.if-construction-polisher:before {
+  content: "\e928";
+}
+.if-construction-rake:before {
+  content: "\e929";
+}
+.if-construction-ready-mixed-concrete:before {
+  content: "\e92a";
+}
+.if-construction-ruler:before {
+  content: "\e92b";
+}
+.if-construction-saw:before {
+  content: "\e92c";
+}
+.if-construction-screw:before {
+  content: "\e92d";
+}
+.if-construction-screwdriver:before {
+  content: "\e92e";
+}
+.if-construction-scythe:before {
+  content: "\e92f";
+}
+.if-construction-shovel:before {
+  content: "\e930";
+}
+.if-construction-socket:before {
+  content: "\e931";
+}
+.if-construction-spray-gun:before {
+  content: "\e932";
+}
+.if-construction-tap:before {
+  content: "\e933";
+}
+.if-construction-trowel:before {
+  content: "\e934";
+}
+.if-construction-vise:before {
+  content: "\e935";
+}
+.if-construction-voltmeter:before {
+  content: "\e936";
+}
+.if-construction-wheelbarrow:before {
+  content: "\e937";
+}
+.if-construction-wrench:before {
+  content: "\e938";
+}

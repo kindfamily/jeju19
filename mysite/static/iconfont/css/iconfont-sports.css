@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'iconfont-sports';
+  src:  url('../fonts/iconfont-sports-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-sports-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-sports-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-sports-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-sports-webfont.svg?hw38j0#iconfont-sports') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-sports {
+  display: inline-block;
+  font-family: 'iconfont-sports' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-sports-american-football-ball:before {
+  content: "\e900";
+}
+.if-sports-american-football-helmet:before {
+  content: "\e901";
+}
+.if-sports-archery-target:before {
+  content: "\e902";
+}
+.if-sports-badminton-racket:before {
+  content: "\e903";
+}
+.if-sports-baseball-ball:before {
+  content: "\e904";
+}
+.if-sports-baseball-bat:before {
+  content: "\e905";
+}
+.if-sports-baseball-glove:before {
+  content: "\e906";
+}
+.if-sports-basketball-ball:before {
+  content: "\e907";
+}
+.if-sports-basketball-ring:before {
+  content: "\e908";
+}
+.if-sports-bicycle:before {
+  content: "\e909";
+}
+.if-sports-boomerang-stick:before {
+  content: "\e90a";
+}
+.if-sports-bowling-ball:before {
+  content: "\e90b";
+}
+.if-sports-bowling-pins:before {
+  content: "\e90c";
+}
+.if-sports-boxing-glove:before {
+  content: "\e90d";
+}
+.if-sports-boxing-helmet:before {
+  content: "\e90e";
+}
+.if-sports-chess:before {
+  content: "\e90f";
+}
+.if-sports-cricket-racket:before {
+  content: "\e910";
+}
+.if-sports-darts-pin:before {
+  content: "\e911";
+}
+.if-sports-diving-googles:before {
+  content: "\e912";
+}
+.if-sports-fencing-sword:before {
+  content: "\e913";
+}
+.if-sports-fishing-rod:before {
+  content: "\e914";
+}
+.if-sports-fitness-weight:before {
+  content: "\e915";
+}
+.if-sports-football-ball:before {
+  content: "\e916";
+}
+.if-sports-golf-hole:before {
+  content: "\e917";
+}
+.if-sports-hockey-stick:before {
+  content: "\e918";
+}
+.if-sports-jumping-rope:before {
+  content: "\e919";
+}
+.if-sports-kayak-boat:before {
+  content: "\e91a";
+}
+.if-sports-racing-helmet:before {
+  content: "\e91b";
+}
+.if-sports-referee-uniform:before {
+  content: "\e91c";
+}
+.if-sports-roller-skate:before {
+  content: "\e91d";
+}
+.if-sports-shuttlecock:before {
+  content: "\e91e";
+}
+.if-sports-skate-board:before {
+  content: "\e91f";
+}
+.if-sports-skiing-sticks:before {
+  content: "\e920";
+}
+.if-sports-soccer-goal-nets:before {
+  content: "\e921";
+}
+.if-sports-stationary-bike:before {
+  content: "\e922";
+}
+.if-sports-stopwatch:before {
+  content: "\e923";
+}
+.if-sports-table-tennis-racket:before {
+  content: "\e924";
+}
+.if-sports-target-board:before {
+  content: "\e925";
+}
+.if-sports-tennis-ball:before {
+  content: "\e926";
+}
+.if-sports-tennis-racket:before {
+  content: "\e927";
+}
+.if-sports-tread-mill:before {
+  content: "\e928";
+}
+.if-sports-uniform:before {
+  content: "\e929";
+}
+.if-sports-volleyball:before {
+  content: "\e92a";
+}
+.if-sports-whistle:before {
+  content: "\e92b";
+}
+.if-sports-yacht-boat:before {
+  content: "\e92c";
+}

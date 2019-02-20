@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'iconfont-keycap';
+  src:  url('../fonts/iconfont-keycap-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-keycap-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-keycap-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-keycap-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-keycap-webfont.svg?hw38j0#iconfont-keycap') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-keycap {
+  display: inline-block;
+  font-family: 'iconfont-keycap' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-keycap-alt:before {
+  content: "\e900";
+}
+.if-keycap-asterisk:before {
+  content: "\e901";
+}
+.if-keycap-back-space:before {
+  content: "\e902";
+}
+.if-keycap-caps-lock:before {
+  content: "\e903";
+}
+.if-keycap-cmd:before {
+  content: "\e904";
+}
+.if-keycap-ctrl:before {
+  content: "\e905";
+}
+.if-keycap-del:before {
+  content: "\e906";
+}
+.if-keycap-down:before {
+  content: "\e907";
+}
+.if-keycap-end:before {
+  content: "\e908";
+}
+.if-keycap-enter:before {
+  content: "\e909";
+}
+.if-keycap-esc:before {
+  content: "\e90a";
+}
+.if-keycap-f1:before {
+  content: "\e90b";
+}
+.if-keycap-f2:before {
+  content: "\e90c";
+}
+.if-keycap-f3:before {
+  content: "\e90d";
+}
+.if-keycap-f4:before {
+  content: "\e90e";
+}
+.if-keycap-f5:before {
+  content: "\e90f";
+}
+.if-keycap-f6:before {
+  content: "\e910";
+}
+.if-keycap-f7:before {
+  content: "\e911";
+}
+.if-keycap-f8:before {
+  content: "\e912";
+}
+.if-keycap-f9:before {
+  content: "\e913";
+}
+.if-keycap-f10:before {
+  content: "\e914";
+}
+.if-keycap-f11:before {
+  content: "\e915";
+}
+.if-keycap-f12:before {
+  content: "\e916";
+}
+.if-keycap-f13:before {
+  content: "\e917";
+}
+.if-keycap-f14:before {
+  content: "\e918";
+}
+.if-keycap-f15:before {
+  content: "\e919";
+}
+.if-keycap-f16:before {
+  content: "\e91a";
+}
+.if-keycap-f17:before {
+  content: "\e91b";
+}
+.if-keycap-f18:before {
+  content: "\e91c";
+}
+.if-keycap-f19:before {
+  content: "\e91d";
+}
+.if-keycap-f20:before {
+  content: "\e91e";
+}
+.if-keycap-fn:before {
+  content: "\e91f";
+}
+.if-keycap-home:before {
+  content: "\e920";
+}
+.if-keycap-left:before {
+  content: "\e921";
+}
+.if-keycap-minus:before {
+  content: "\e922";
+}
+.if-keycap-num-lk:before {
+  content: "\e923";
+}
+.if-keycap-opt:before {
+  content: "\e924";
+}
+.if-keycap-pause-break:before {
+  content: "\e925";
+}
+.if-keycap-pgdn:before {
+  content: "\e926";
+}
+.if-keycap-pgup:before {
+  content: "\e927";
+}
+.if-keycap-plus:before {
+  content: "\e928";
+}
+.if-keycap-prt-sc:before {
+  content: "\e929";
+}
+.if-keycap-quotation:before {
+  content: "\e92a";
+}
+.if-keycap-right:before {
+  content: "\e92b";
+}
+.if-keycap-shift:before {
+  content: "\e92c";
+}
+.if-keycap-slash:before {
+  content: "\e92d";
+}
+.if-keycap-tab:before {
+  content: "\e92e";
+}
+.if-keycap-up:before {
+  content: "\e92f";
+}
+.if-keycap-window:before {
+  content: "\e930";
+}
+.if-keycap-open:before {
+  content: "\e931";
+}

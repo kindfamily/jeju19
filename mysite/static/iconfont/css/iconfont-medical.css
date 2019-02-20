@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'iconfont-medical';
+  src:  url('../fonts/iconfont-medical-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-medical-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-medical-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-medical-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-medical-webfont.svg?hw38j0#iconfont-medical') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-medical {
+  display: inline-block;
+  font-family: 'iconfont-medical' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-medical-ambulance:before {
+  content: "\e900";
+}
+.if-medical-baby-face:before {
+  content: "\e901";
+}
+.if-medical-baby:before {
+  content: "\e902";
+}
+.if-medical-bandage-cross:before {
+  content: "\e903";
+}
+.if-medical-biohazard:before {
+  content: "\e904";
+}
+.if-medical-biology-shape:before {
+  content: "\e905";
+}
+.if-medical-blood-analysis:before {
+  content: "\e906";
+}
+.if-medical-blood-cell:before {
+  content: "\e907";
+}
+.if-medical-blood-drop:before {
+  content: "\e908";
+}
+.if-medical-blood-pressure-control-tool:before {
+  content: "\e909";
+}
+.if-medical-blood-sample:before {
+  content: "\e90a";
+}
+.if-medical-brain:before {
+  content: "\e90b";
+}
+.if-medical-broken-bone:before {
+  content: "\e90c";
+}
+.if-medical-broken-feet-with-bandage:before {
+  content: "\e90d";
+}
+.if-medical-brush-with-tooth:before {
+  content: "\e90e";
+}
+.if-medical-caduceus-medical-symbol:before {
+  content: "\e90f";
+}
+.if-medical-cells-in-a-circle:before {
+  content: "\e910";
+}
+.if-medical-chemistry-flask:before {
+  content: "\e911";
+}
+.if-medical-crutch:before {
+  content: "\e912";
+}
+.if-medical-dentist-tool:before {
+  content: "\e913";
+}
+.if-medical-doctor:before {
+  content: "\e914";
+}
+.if-medical-dosage-medical-tool:before {
+  content: "\e915";
+}
+.if-medical-dropper:before {
+  content: "\e916";
+}
+.if-medical-drug-pills:before {
+  content: "\e917";
+}
+.if-medical-drugs:before {
+  content: "\e918";
+}
+.if-medical-emergency-light:before {
+  content: "\e919";
+}
+.if-medical-female-gender-sign:before {
+  content: "\e91a";
+}
+.if-medical-handicap:before {
+  content: "\e91b";
+}
+.if-medical-hospital-bed:before {
+  content: "\e91c";
+}
+.if-medical-human-feet-shape:before {
+  content: "\e91d";
+}
+.if-medical-hurted-finger-with-bandage:before {
+  content: "\e91e";
+}
+.if-medical-lood-transfusion:before {
+  content: "\e91f";
+}
+.if-medical-lungs-silhouette:before {
+  content: "\e920";
+}
+.if-medical-male-gender-sign:before {
+  content: "\e921";
+}
+.if-medical-medical-chain-symbol-of-dna:before {
+  content: "\e922";
+}
+.if-medical-medical-chopper-transport:before {
+  content: "\e923";
+}
+.if-medical-medical-hammer:before {
+  content: "\e924";
+}
+.if-medical-medical-pill:before {
+  content: "\e925";
+}
+.if-medical-medical-samples-in-test-tubes:before {
+  content: "\e926";
+}
+.if-medical-medical-temperature:before {
+  content: "\e927";
+}
+.if-medical-medicine-capsules:before {
+  content: "\e928";
+}
+.if-medical-microscope-tool:before {
+  content: "\e929";
+}
+.if-medical-mouth-tube:before {
+  content: "\e92a";
+}
+.if-medical-nurse-with-mask:before {
+  content: "\e92b";
+}
+.if-medical-nurse:before {
+  content: "\e92c";
+}
+.if-medical-opened-medical-scissors:before {
+  content: "\e92d";
+}
+.if-medical-oxygen:before {
+  content: "\e92e";
+}
+.if-medical-pharmacy-symbol:before {
+  content: "\e92f";
+}
+.if-medical-poison-bottle:before {
+  content: "\e930";
+}
+.if-medical-pregnancy:before {
+  content: "\e931";
+}
+.if-medical-roken-arm:before {
+  content: "\e932";
+}
+.if-medical-rolled-paper:before {
+  content: "\e933";
+}
+.if-medical-scale-tool-to-control-body-weight:before {
+  content: "\e934";
+}
+.if-medical-scalpel:before {
+  content: "\e935";
+}
+.if-medical-screw:before {
+  content: "\e936";
+}
+.if-medical-sperm:before {
+  content: "\e937";
+}
+.if-medical-stethoscope:before {
+  content: "\e938";
+}
+.if-medical-stomach-shape:before {
+  content: "\e939";
+}
+.if-medical-syringe-with-medicine:before {
+  content: "\e93a";
+}
+.if-medical-syrup-medicine-bottle:before {
+  content: "\e93b";
+}
+.if-medical-teeth-silhouette:before {
+  content: "\e93c";
+}
+.if-medical-three-hexagons-cell:before {
+  content: "\e93d";
+}
+.if-medical-toxic:before {
+  content: "\e93e";
+}
+.if-medical-unhealthy-medical-condition:before {
+  content: "\e93f";
+}
+.if-medical-united-heterosexual-symbols:before {
+  content: "\e940";
+}
+.if-medical-x-ray-of-bone:before {
+  content: "\e941";
+}
+.if-medical-ymbolic-cancer-ribbon:before {
+  content: "\e942";
+}

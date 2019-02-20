@@ -1,0 +1,39 @@
+@import url("iconfont-animate.css");
+@import url("iconfont-general.css");
+@import url("iconfont-general2.css");
+@import url("iconfont-building.css");
+@import url("iconfont-car.css");
+@import url("iconfont-chart.css");
+@import url("iconfont-construction.css");
+@import url("iconfont-device.css");
+@import url("iconfont-food.css");
+@import url("iconfont-music.css");
+@import url("iconfont-sports.css");
+@import url("iconfont-business.css");
+@import url("iconfont-warning.css");
+@import url("iconfont-fashion.css");
+@import url("iconfont-olympic.css");
+@import url("iconfont-file.css");
+@import url("iconfont-currency.css");
+@import url("iconfont-map.css");
+@import url("iconfont-gesture.css");
+@import url("iconfont-medical.css");
+@import url("iconfont-weather.css");
+@import url("iconfont-keycap.css");
+
+.if-sm {
+  font-size: 2em !important;
+}
+.if-md {
+  font-size: 4em !important;
+}
+.if-lg {
+  font-size: 6em !important;
+}
+
+.if.pull-left {
+  margin-right: .3em;
+}
+.if.pull-right {
+  margin-left: .3em;
+}

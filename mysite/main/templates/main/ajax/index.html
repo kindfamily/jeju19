@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hecksterclone</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script type="text/javascript">
+  WebFont.load({
+    // For google fonts
+    google: {
+      families: ['Noto Sans KR', 'Roboto']
+    }
+  });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
+<!-- <link rel="stylesheet" href="./css/main.css"> -->
+
+<style>
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, code, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption { margin: 0; padding: 0; border: 0; }
+div, span, article, section, header, footer, p, ul, li, fieldset, legend, label { box-sizing: border-box; }
+
+html {
+    font-size: 30px;
+    color: #333;
+    font-family: 'Noto Sans KR', Roboto, sans-serif;
+}
+
+/*rem: root em*/
+/*root는 <html>*/
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+a {
+    display: inline-block;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+
+hr{
+    border:0px;
+}
+
+/* 버튼 커스텀 시작 */
+.btn {
+    border-radius: 3px;
+    font-size: 1rem;
+    text-decoration: none;
+    background: white;
+    cursor: pointer;
+}
+
+.big-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5em;
+    border: 0;
+    color: white;
+    text-align: center;
+    background: #1cb1c9;
+}
+
+.icon-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-label {
+    display: inline-block;
+}
+
+/* 버튼 커스텀 종료 */
+
+
+
+/* input 타입에 따라서 따로 크기 지정 가능할듯, 에어비엔비 권장 사항 엔터킷 */
+
+input[type='text'],
+input[type='password'],
+input[type='search'],
+input[type='email'] {
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    background: white;
+}
+
+
+.grid {
+    font-size: 0.7rem;
+    padding: 1em;
+    padding: 1rem;
+    /* border: 3px solid blue; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+
+    /* min-height: 100vh; */
+    /* padding-top: 45px; */
+}
+
+body.page-home .content-container {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.global-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 70px;
+    background: white;
+    border-bottom: 0.1px solid black;
+}
+
+.global-header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    font-size: 0;
+    transform: translate(-50%, -50%);
+}
+
+.global-header input[type='search'] {
+    border: 0;
+}
+
+.global-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 110;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    color: powderblue;
+    background: transparent;
+    cursor: pointer;
+}
+
+.icon-btn .btn-label,
+.global-menu-btn .btn-label {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 1px, 1px, 1px);
+}
+
+.global-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    color: white;
+    background: rgba(0, 0, 0,0.8);
+}
+
+.global-menu-nav {
+    margin-top: 5vh;
+}
+
+
+.global-menu a {
+    padding: 1em 0;
+    color: white;
+    text-decoration: none;
+}
+
+body.page-about .menu-item-about a,
+body.page-list .menu-item-list a {
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.3) 0 0 0.3em;
+}
+
+.global-menu .icon-btn {
+    color: black;
+}
+
+body.menu-on {
+    overflow: hidden;
+    height: 100%;
+}
+
+body.menu-on .global-menu {
+    display: block;
+}
+
+.text-input-and-btn {
+    display: flex;
+}
+
+.text-input-and-btn .input-wrapper {
+    flex: 1;
+    border: 1px solid black;
+    width: 500px;
+    height: 40px;;
+    margin-left: 0.5em;
+}
+
+.text-input-and-btn input[type='text'],
+.text-input-and-btn input[type='search'],
+.text-input-and-btn input[type='email'] {
+    width: 100%;
+}
+
+
+
+/* main 화면 넣기위한 공간 */
+.content-section-main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.content-section-main div{
+    /* border: 1px solid black; */
+}
+
+
+.content-signup{
+    background-color: yellow;
+    padding: 2rem 3rem;
+    margin: 0 5rem;
+
+}
+
+.main-copy {
+    text-align: center;
+    /* font-size: 1.3rem; */
+    /* font-weight: 200; */
+}
+
+
+/* content section 시작 */
+.content-section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.content-section:nth-child(2) {
+    background: pink;
+}
+/* content section 종료 */
+
+/* footer 시작 */
+.global-footer {
+    padding: 1em;
+    background: gray;
+}
+
+/* footer 종료 */
+
+
+h1 {
+    font-size: 50px;
+}
+
+h1 span {
+    font-size: 0.5em;
+}
+
+.global-footer {
+    margin-top: 3em;
+    padding: 1em 0 2em;
+    border-top: 1px solid #ddd;
+    color: #999;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+
+@media (min-width: 1200px) {
+    hr{
+        border: 0.5px solid black;
+    }
+
+    body {
+        min-height: 100%;
+    }
+    
+    /* input 타입에 따라서 따로 크기 지정 가능할듯, 에어비엔비 권장 사항 엔터킷 */
+    input[type='text'],
+    input[type='password'],
+    input[type='search'],
+    input[type='email'] {
+        height: 36px;
+        border: 1px solid black;
+        border-radius: 3px;
+        font-size: 0.5rem;
+        background: white;
+    }
+
+    .container{
+        padding-top: 200px;
+    }
+
+    .grid {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .grid-main {
+        /* max-width: 1500px; */
+        margin: 0 auto;
+    }
+
+    .content-section-main-img{
+        margin: 3
+        width: 100%;
+        max-width:2000px;
+        height: auto;
+    }
+    
+    .content-signup{
+        /* background-color: yellow; */
+        margin: 0 5rem;
+    }
+
+    .content-section-main{
+        display: flex;
+    }
+
+    .content-section-main > div{
+        /* border: 1px solid black; */
+    }
+    
+
+    .content-section-main:nth-child(1) {
+        flex: 6;
+    }
+
+    .content-section-main:nth-child(2) {
+        flex: 4;
+    }
+
+
+    .content-area {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .global-header {
+        height: 192px;
+        /* background: whitesmoke; */
+    }
+
+    .global-header > .grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .global-header .logo {
+        position: static;
+        transform: none;
+    }
+
+    .global-menu-btn {
+        display: none;
+    }
+
+    .global-menu,
+    body.menu-on .global-menu {
+        display: flex;
+        align-items: center;
+        position: static;
+        width: auto;
+        padding: 0;
+        background: transparent;
+    }
+
+    .global-menu a {
+        padding: 0 1em;
+        color: black;
+    }
+
+    .global-menu-nav {
+        display: flex;
+        margin-top: 0;
+    }
+
+    .global-menu-nav ul {
+        display: flex;
+    }
+
+    .global-menu-nav ul {
+        display: flex;
+    }
+
+    .search-cafe-form {
+        margin-top: 0;
+        margin-left: 3rem;
+    }
+
+/* 아래서 부터 기존 css */
+    .grid {
+        /* max-width: 1050px; */
+        /* max-width: 1050px;         */
+        margin: 0 auto;
+        /* border: 2px solid black; */
+    }
+
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-container {
+        display: flex;
+    }
+
+    .content-section:nth-child(1) {
+        flex: 1;
+    }
+
+    .content-section:nth-child(2) {
+        flex: 9;
+    }
+
+
+
+    .content-signup{
+        margin: 0 7rem;
+    }
+
+    .content-signup input {
+        /* padding: 1rem; */
+        width: 400px;
+    }
+
+    .content-signup label{
+        font-size: 0.5rem;
+        text-align: left;
+    }
+
+
+    /* card */
+    .content-section{
+        max-width: 1500px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        margin: 1rem;
+    }
+
+
+}
+
+.content-signup input{
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.content-signup input::placeholder{
+    color: gainsboro;
+    font-size: 0.7rem;
+    /* font-style: italic; */
+    padding: 0.5rem;
+}
+
+.content-signup button {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: palevioletred;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.content-signup button:hover{
+    opacity: 0.7;
+
+}
+.content-signup-center{
+    text-align: center;
+}
+
+.content-signup h1{
+    font-size: 1.5rem;
+    line-height:1.3em;
+    padding: 0 2rem;
+}
+
+
+
+.content-signup form {
+    padding: 1rem;
+}
+
+.content-signup label{
+    font-size: 0.5rem;
+    text-align: left;
+}
+
+.content-signup p{
+    font-size: 0.5rem;
+    padding: 0.2rem 0;
+    margin-bottom:0.3rem;
+}
+
+.google{
+   display: flex;
+   background-color: skyblue;
+   margin:0 1rem;
+}
+
+.google .logo{
+    font-size: 0.5rem;
+    padding: 0.4rem;
+    flex: 1;
+}
+.google .title {
+    text-align: ceter;
+    font-size: 0.5rem;
+    padding: 0.4rem;
+    flex: 9;
+}
+
+.content-signup-back{
+    background: whitesmoke;
+}
+
+
+
+/* card */
+.content-section{
+    /* max-width: 1500px; */
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card .title {
+  color: grey;
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body class="page-home">
+    <article class="container">
+         <!-- global-header -->
+         <!-- 로그인 여부에 따라서 global-menu를 다르게 보여주기 -->
+         <div class="global-header">
+            <div class="grid">
+                <a class="logo" href="./index.html">
+                    <img src="./images/logo.png" alt="제주카페찾기">
+                </a>
+                <div class="global-menu">
+                    <form class="search-cafe-form text-input-and-btn">
+                        <div class="input-wrapper">
+                            <input type="search" placeholder="what are you looking for?">
+                        </div>
+                        <button class="icon-btn search-cafe-form-btn">
+                            <i class="fas fa-search"></i>
+                            <span class="btn-label">카페찾기</span>
+                        </button>
+                    </form>
+                    <nav class="global-menu-nav">
+                        <ul>
+                            <li class="menu-item-about">
+                                <a href="about.html">login</a>
+                            </li>
+                            <li class="menu-item-list">
+                                <a href="list.html">signup</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+                <button class="global-menu-btn">
+                    <i class="fas fa-bars"></i>
+                    <span class="btn-label">메뉴</span>
+                </button>
+            </div>
+            <!-- <hr style="margin:0; padding:0"> -->
+            <div class="grid">
+                <div class="global-menu">
+                    <nav class="global-menu-nav">
+                        <ul>
+                            <li class="menu-item-about">
+                                <a href="#">Projects</a>
+                            </li>
+                            <li class="menu-item-list">
+                                <a href="#">Videos</a>
+                            </li>
+                            <li class="menu-item-list">
+                                <a href="#">Contest</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+         </div>
+
+        <!-- main-content -->
+        <div class="main-container">
+            <div class="grid-main content-section-main">
+                <section class="content-section-main content-signup">
+                    <!-- <div class="content-signup"> -->
+                        <div class="content-signup-back">
+                            <div class="content-signup-center">
+                                <h1>Join the world’s best hardware engineers.</h1>
+                                <p>
+                                    Create your account to explore thousands of projects, build your skills, and discover new products and technologies.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="google"> 
+                                    <div class="logo">G</div>
+                                    <div class="title">Signup with google</div>
+                                </div>
+                                <p class="content-signup-center">
+                                    More options >
+                                <p>
+                                <form action="">
+                                    <label class="" for="full_name_or_nickname_name" style="">Full name or nickname</label>
+                                    <br>
+                                    <input type="text" autofocus="" class="" id="full_name_or_nickname_name" name="name" placeholder="First and last name" value="">
+                                    <br>
+                                    <label class="" for="full_name_or_nickname_name">Full name or nickname</label>
+                                    <br>
+                                    <input type="text" autofocus="" class="" id="full_name_or_nickname_name" name="name" placeholder="First and last name" value="">
+                                    <p>We will never share your email with others.</p>
+                                    <button class="" type="submit">Join Hackster</button>
+                                </form>
+                                <p class="content-signup-center">Already have an account? <a class=" " href="javascript:void(0)" type="button">Log in.</a></p>
+                            </div>
+                        </div>
+                        
+                    <!-- </div> -->
+                </section>
+                <section class="content-section-main">
+                    <img class="content-section-main-img"src="./images/main.png" alt="메인사진">
+                </section>
+            </div>
+        </div>
+
+        <!-- content-area -->
+        <div class="content-container">
+            <section class="content-section">
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/team2.jpg" alt="John" style="width:100%">
+                        <h1>John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                          <a href="#"><i class="fa fa-dribbble"></i></a> 
+                          <a href="#"><i class="fa fa-twitter"></i></a>  
+                          <a href="#"><i class="fa fa-linkedin"></i></a>  
+                          <a href="#"><i class="fa fa-facebook"></i></a> 
+                        </div>
+                        <p><button>Contact</button></p>
+                    </div>
+                    
+            </section>
+            <!-- <section class="content-section">
+                <div class="grid">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+            </section> -->
+        </div>
+
+        <!-- footer -->
+        <footer class="global-footer">
+            <div class="grid">
+                footer
+            </div>
+        </footer>
+    </article>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'iconfont-fashion';
+  src:  url('../fonts/iconfont-fashion-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-fashion-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-fashion-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-fashion-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-fashion-webfont.svg?hw38j0#iconfont-fashion') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-fashion {
+  display: inline-block;
+  font-family: 'iconfont-fashion' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-fashion-belt:before {
+  content: "\e900";
+}
+.if-fashion-bikini:before {
+  content: "\e901";
+}
+.if-fashion-blouse:before {
+  content: "\e902";
+}
+.if-fashion-body-suit:before {
+  content: "\e903";
+}
+.if-fashion-bootcut-pants:before {
+  content: "\e904";
+}
+.if-fashion-boots:before {
+  content: "\e905";
+}
+.if-fashion-business-suit:before {
+  content: "\e906";
+}
+.if-fashion-cap:before {
+  content: "\e907";
+}
+.if-fashion-casual-tshirt:before {
+  content: "\e908";
+}
+.if-fashion-cufflinks:before {
+  content: "\e909";
+}
+.if-fashion-earrings:before {
+  content: "\e90a";
+}
+.if-fashion-glasses:before {
+  content: "\e90b";
+}
+.if-fashion-gloves:before {
+  content: "\e90c";
+}
+.if-fashion-handbag:before {
+  content: "\e90d";
+}
+.if-fashion-high-heel-boots:before {
+  content: "\e90e";
+}
+.if-fashion-high-heel-sandals:before {
+  content: "\e90f";
+}
+.if-fashion-hoddie:before {
+  content: "\e910";
+}
+.if-fashion-knickers:before {
+  content: "\e911";
+}
+.if-fashion-knitted-cap:before {
+  content: "\e912";
+}
+.if-fashion-knitted-mittens:before {
+  content: "\e913";
+}
+.if-fashion-lingerie-clothes:before {
+  content: "\e914";
+}
+.if-fashion-lipstick:before {
+  content: "\e915";
+}
+.if-fashion-men-shoe:before {
+  content: "\e916";
+}
+.if-fashion-men-socks:before {
+  content: "\e917";
+}
+.if-fashion-necklace:before {
+  content: "\e918";
+}
+.if-fashion-neckline-dress:before {
+  content: "\e919";
+}
+.if-fashion-panties:before {
+  content: "\e91a";
+}
+.if-fashion-pants:before {
+  content: "\e91b";
+}
+.if-fashion-perfume:before {
+  content: "\e91c";
+}
+.if-fashion-polo-shirt:before {
+  content: "\e91d";
+}
+.if-fashion-pretty-dress:before {
+  content: "\e91e";
+}
+.if-fashion-ring:before {
+  content: "\e91f";
+}
+.if-fashion-sandals:before {
+  content: "\e920";
+}
+.if-fashion-scarf:before {
+  content: "\e921";
+}
+.if-fashion-short-pants:before {
+  content: "\e922";
+}
+.if-fashion-short-sleeve-dress:before {
+  content: "\e923";
+}
+.if-fashion-skirt:before {
+  content: "\e924";
+}
+.if-fashion-slippers:before {
+  content: "\e925";
+}
+.if-fashion-soccer-shoe:before {
+  content: "\e926";
+}
+.if-fashion-sock:before {
+  content: "\e927";
+}
+.if-fashion-sport-shoe:before {
+  content: "\e928";
+}
+.if-fashion-summer-dress:before {
+  content: "\e929";
+}
+.if-fashion-sweater:before {
+  content: "\e92a";
+}
+.if-fashion-tie:before {
+  content: "\e92b";
+}
+.if-fashion-tradicional-hat:before {
+  content: "\e92c";
+}
+.if-fashion-trousers:before {
+  content: "\e92d";
+}
+.if-fashion-t-shirt:before {
+  content: "\e92e";
+}
+.if-fashion-ugg-boots:before {
+  content: "\e92f";
+}
+.if-fashion-waistcoat:before {
+  content: "\e930";
+}
+.if-fashion-winter-cap:before {
+  content: "\e931";
+}
+.if-fashion-women-bag:before {
+  content: "\e932";
+}
+.if-fashion-women-coat:before {
+  content: "\e933";
+}
+.if-fashion-women-long-coat:before {
+  content: "\e934";
+}
+.if-fashion-women-robe:before {
+  content: "\e935";
+}
+.if-fashion-women-shoe:before {
+  content: "\e936";
+}
+.if-fashion-women-socks:before {
+  content: "\e937";
+}
+.if-fashion-women-suit:before {
+  content: "\e938";
+}
+.if-fashion-women-track-suit:before {
+  content: "\e939";
+}
+.if-fashion-women-wallet:before {
+  content: "\e93a";
+}

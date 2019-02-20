@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'iconfont-map';
+  src:  url('../fonts/iconfont-map-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-map-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-map-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-map-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-map-webfont.svg?hw38j0#iconfont-map') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-map {
+  display: inline-block;
+  font-family: 'iconfont-map' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-map-add-location:before {
+  content: "\e900";
+}
+.if-map-beenhere:before {
+  content: "\e901";
+}
+.if-map-directions-bike:before {
+  content: "\e902";
+}
+.if-map-directions-boat:before {
+  content: "\e903";
+}
+.if-map-directions-railway:before {
+  content: "\e904";
+}
+.if-map-directions-run:before {
+  content: "\e905";
+}
+.if-map-directions-subway:before {
+  content: "\e906";
+}
+.if-map-directions-transit:before {
+  content: "\e907";
+}
+.if-map-directions-walk:before {
+  content: "\e908";
+}
+.if-map-directions:before {
+  content: "\e909";
+}
+.if-map-edit-location:before {
+  content: "\e90a";
+}
+.if-map-ev-station:before {
+  content: "\e90b";
+}
+.if-map-flight:before {
+  content: "\e90c";
+}
+.if-map-layers-clear:before {
+  content: "\e90d";
+}
+.if-map-layers:before {
+  content: "\e90e";
+}
+.if-map-local-activity:before {
+  content: "\e90f";
+}
+.if-map-local-atm:before {
+  content: "\e910";
+}
+.if-map-local-bar:before {
+  content: "\e911";
+}
+.if-map-local-cafe:before {
+  content: "\e912";
+}
+.if-map-local-car-wash:before {
+  content: "\e913";
+}
+.if-map-local-convenience-store:before {
+  content: "\e914";
+}
+.if-map-local-dining:before {
+  content: "\e915";
+}
+.if-map-local-drink-path:before {
+  content: "\e916";
+  /*color: rgb(0, 0, 0);*/
+}
+.if-map-local-drink-path2:before {
+  content: "\e917";
+  /*margin-left: -1em;*/
+  /*color: rgb(255, 255, 255);*/
+}
+.if-map-local-florist:before {
+  content: "\e918";
+}
+.if-map-local-gas-station:before {
+  content: "\e919";
+}
+.if-map-local-hospital:before {
+  content: "\e91a";
+}
+.if-map-local-hotel:before {
+  content: "\e91b";
+}
+.if-map-local-library:before {
+  content: "\e91c";
+}
+.if-map-local-mall:before {
+  content: "\e91d";
+}
+.if-map-local-movies:before {
+  content: "\e91e";
+}
+.if-map-local-offer:before {
+  content: "\e91f";
+}
+.if-map-local-parking:before {
+  content: "\e920";
+}
+.if-map-local-pharmacy:before {
+  content: "\e921";
+}
+.if-map-local-shipping:before {
+  content: "\e922";
+}
+.if-map-pin:before {
+  content: "\e923";
+}
+.if-map-pinning:before {
+  content: "\e924";
+}
+.if-map-map:before {
+  content: "\e925";
+}
+.if-map-my-location:before {
+  content: "\e926";
+}
+.if-map-navigation:before {
+  content: "\e927";
+}
+.if-map-near-me:before {
+  content: "\e928";
+}
+.if-map-person-pin-circle:before {
+  content: "\e929";
+}
+.if-map-person-pin:before {
+  content: "\e92a";
+}
+.if-map-pin-drop:before {
+  content: "\e92b";
+}
+.if-map-rate-review:before {
+  content: "\e92c";
+}
+.if-map-restaurant-menu:before {
+  content: "\e92d";
+}
+.if-map-satellite:before {
+  content: "\e92e";
+}
+.if-map-store-mall-directory:before {
+  content: "\e92f";
+}
+.if-map-streetview:before {
+  content: "\e930";
+}
+.if-map-subway:before {
+  content: "\e931";
+}
+.if-map-terrain:before {
+  content: "\e932";
+}
+.if-map-traffic:before {
+  content: "\e933";
+}
+.if-map-train:before {
+  content: "\e934";
+}
+.if-map-tram:before {
+  content: "\e935";
+}
+.if-map-transfer-within-a-station:before {
+  content: "\e936";
+}
+.if-map-zoom-in-map:before {
+  content: "\e937";
+}
+.if-map-zoom-out-map:before {
+  content: "\e938";
+}

@@ -2,65 +2,25 @@
 
 {% block content %}
 {% load staticfiles %}
-<body class="page-about">
-<div class="jejucafe-container">
-    <!-- global-header 시작 -->
-    <header class="global-header">
-        <div class="grid">
-            <button class="global-menu-btn">
-                <i class="fas fa-bars"></i>
-                <span class="btn-label">메뉴</span>
-            </button>
-            <a class="logo" href="/cafe">
-                <img src="{% static 'images/logo.png' %}" alt="제주카페찾기">
-            </a>
-            <div class="global-menu">
-                <nav class="global-menu-nav">
-                    <ul>
-                        <li class="menu-item-about">
-                            <a href="/cafe/about">서비스 소개</a>
-                        </li>
-                        <li class="menu-item-list">
-                            <a href="/cafe/cafelist">카페들</a>
-                        </li>
-                    </ul>
-                    <a href="/cafe/new" class="add-cafe-btn">
-                        <i class="fas fa-plus"></i>
-                        <span class="btn-label">카페등록</span>
-                    </a>
-                </nav>
-                <form class="search-cafe-form text-input-and-btn">
-                    <div class="input-wrapper">
-                        <input type="search" placeholder="찾고 싶은 카페 이름">
-                    </div>
-                    <button class="icon-btn search-cafe-form-btn">
-                        <i class="fas fa-search"></i>
-                        <span class="btn-label">카페찾기</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </header>
-    <!-- global-header 끝 -->
 
     <!-- content-area 시작 -->
     <div class="content-area">
         <!-- 소개 페이지 내용 시작 -->
         <div class="grid">
         <header>
-                <h1>{{cafeobj.이름}}</h1>
+            <h1>{{cafeobj.이름}}</h1>
         <br>
         <div class="slideshow-container">
 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 2</div>
+          <!-- <div class="numbertext">1 / 2</div> -->
           <img src="{{ cafeobj.메인사진.url }}" style="height:50%">
           <div class="text">Caption Text</div>
         </div>
 
         {% if cafeobj.서브사진 %}
         <div class="mySlides fade">
-          <div class="numbertext">2 / 2</div>
+          <!-- <div class="numbertext">2 / 2</div> -->
           <img src="{{ cafeobj.서브사진.url }}" style="height:100%">
           <div class="text">Caption Two</div>
         </div>
@@ -96,6 +56,10 @@
             </li>
             <li>
               <p>{{cafeobj.소개|linebreaks}}</p>
+            </li>
+            <li>
+              <p>#{{cafeobj.tag.names.0}}</p>
+              <p>#{{cafeobj.tag.names.1}}</p>
             </li>
           </ul>
         </div>

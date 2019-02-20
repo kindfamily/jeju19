@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'iconfont-chart';
+  src:  url('../fonts/iconfont-chart-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-chart-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-chart-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-chart-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-chart-webfont.svg?hw38j0#iconfont-chart') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-chart {
+  display: inline-block;
+  font-family: 'iconfont-chart' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-chart-along-stacked-chart:before {
+  content: "\e900";
+}
+.if-chart-area-chart:before {
+  content: "\e901";
+}
+.if-chart-bar-chart:before {
+  content: "\e902";
+}
+.if-chart-bubble-chart:before {
+  content: "\e903";
+}
+.if-chart-business-objects-experience:before {
+  content: "\e904";
+}
+.if-chart-chart-axis:before {
+  content: "\e905";
+}
+.if-chart-chart-table-view:before {
+  content: "\e906";
+}
+.if-chart-tree-map:before {
+  content: "\e907";
+}
+.if-chart-choropleth-chart:before {
+  content: "\e908";
+}
+.if-chart-column-chart-dual-axis:before {
+  content: "\e909";
+}
+.if-chart-crossed-line-chart:before {
+  content: "\e90a";
+}
+.if-chart-donut-chart:before {
+  content: "\e90b";
+}
+.if-chart-filter-analytics:before {
+  content: "\e90c";
+}
+.if-chart-full-stacked-chart:before {
+  content: "\e90d";
+}
+.if-chart-full-stacked-column-chart:before {
+  content: "\e90e";
+}
+.if-chart-geographic-bubble-chart:before {
+  content: "\e90f";
+}
+.if-chart-heatmap-chart:before {
+  content: "\e910";
+}
+.if-chart-horizontal-bar-chart:before {
+  content: "\e911";
+}
+.if-chart-horizontal-bar-chart-2:before {
+  content: "\e912";
+}
+.if-chart-horizontal-bullet-chart:before {
+  content: "\e913";
+}
+.if-chart-horizontal-stacked-chart:before {
+  content: "\e914";
+}
+.if-chart-horizontal-waterfall-chart:before {
+  content: "\e915";
+}
+.if-chart-legend:before {
+  content: "\e916";
+}
+.if-chart-line-chart:before {
+  content: "\e917";
+}
+.if-chart-line-chart-dual-axis:before {
+  content: "\e918";
+}
+.if-chart-line-charts:before {
+  content: "\e919";
+}
+.if-chart-line-chart-time-axis:before {
+  content: "\e91a";
+}
+.if-chart-multiple-bar-chart:before {
+  content: "\e91b";
+}
+.if-chart-multiple-line-chart:before {
+  content: "\e91c";
+}
+.if-chart-multiple-pie-chart:before {
+  content: "\e91d";
+}
+.if-chart-multiple-radar-chart:before {
+  content: "\e91e";
+}
+.if-chart-org-chart:before {
+  content: "\e91f";
+}
+.if-chart-overview-chart:before {
+  content: "\e920";
+}
+.if-chart-pie-chart:before {
+  content: "\e921";
+}
+.if-chart-pipeline-analysis:before {
+  content: "\e922";
+}
+.if-chart-radar-chart:before {
+  content: "\e923";
+}
+.if-chart-scatter-chart:before {
+  content: "\e924";
+}
+.if-chart-stovertical-stacked-chartve:before {
+  content: "\e925";
+}
+.if-chart-table-chart:before {
+  content: "\e926";
+}
+.if-chart-tag-cloud-chart:before {
+  content: "\e927";
+}
+.if-chart-temperature:before {
+  content: "\e928";
+}
+.if-chart-tools-opportunity:before {
+  content: "\e929";
+}
+.if-chart-trip-report:before {
+  content: "\e92a";
+}
+.if-chart-upstacked-chart:before {
+  content: "\e92b";
+}
+.if-chart-vertical-bar-chart:before {
+  content: "\e92c";
+}
+.if-chart-vertical-bar-chart-2:before {
+  content: "\e92d";
+}
+.if-chart-vertical-bullet-chart:before {
+  content: "\e92e";
+}
+.if-chart-vertical-waterfall-chart:before {
+  content: "\e92f";
+}

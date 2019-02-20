@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'iconfont-business';
+  src:  url('../fonts/iconfont-business-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-business-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-business-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-business-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-business-webfont.svg?hw38j0#iconfont-business') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-business {
+  display: inline-block;
+  font-family: 'iconfont-business' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-business-audit:before {
+  content: "\e900";
+}
+.if-business-auditor:before {
+  content: "\e901";
+}
+.if-business-car-verification:before {
+  content: "\e902";
+}
+.if-business-category:before {
+  content: "\e903";
+}
+.if-business-checklist:before {
+  content: "\e904";
+}
+.if-business-company-verification:before {
+  content: "\e905";
+}
+.if-business-customer-verification:before {
+  content: "\e906";
+}
+.if-business-field-force:before {
+  content: "\e907";
+}
+.if-business-kpi:before {
+  content: "\e908";
+}
+.if-business-network:before {
+  content: "\e909";
+}
+.if-business-survey:before {
+  content: "\e90a";
+}
+.if-business-target-customer:before {
+  content: "\e90b";
+}
+.if-business-workflow:before {
+  content: "\e90c";
+}

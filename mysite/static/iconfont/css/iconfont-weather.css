@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'iconfont-weather';
+  src:  url('../fonts/iconfont-weather-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-weather-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-weather-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-weather-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-weather-webfont.svg?hw38j0#iconfont-weather') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-weather {
+  display: inline-block;
+  font-family: 'iconfont-weather' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-weather-celsius:before {
+  content: "\e900";
+}
+.if-weather-fahrenheit:before {
+  content: "\e901";
+}
+.if-weather-fine-dust:before {
+  content: "\e902";
+}
+.if-weather-fog:before {
+  content: "\e903";
+}
+.if-weather-humidity:before {
+  content: "\e904";
+}
+.if-weather-mostly-cloudy:before {
+  content: "\e905";
+}
+.if-weather-mostly-fogy:before {
+  content: "\e906";
+}
+.if-weather-night-moon:before {
+  content: "\e907";
+}
+.if-weather-rainny01:before {
+  content: "\e908";
+}
+.if-weather-rainny02:before {
+  content: "\e909";
+}
+.if-weather-snow:before {
+  content: "\e90a";
+}
+.if-weather-snowing:before {
+  content: "\e90b";
+}
+.if-weather-sunny01:before {
+  content: "\e90c";
+}
+.if-weather-sunny02:before {
+  content: "\e90d";
+}
+.if-weather-sunrise:before {
+  content: "\e90e";
+}
+.if-weather-sunset:before {
+  content: "\e90f";
+}
+.if-weather-thunder-storm:before {
+  content: "\e910";
+}
+.if-weather-tornado:before {
+  content: "\e911";
+}
+.if-weather-umbrella:before {
+  content: "\e912";
+}
+.if-weather-wind-gauge:before {
+  content: "\e913";
+}
+.if-weather-wind-vane:before {
+  content: "\e914";
+}
+.if-weather-windy:before {
+  content: "\e915";
+}

@@ -1,0 +1,296 @@
+@font-face {
+  font-family: 'iconfont-food';
+  src:  url('../fonts/iconfont-food-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-food-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-food-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-food-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-food-webfont.svg?hw38j0#iconfont-food') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-food {
+  display: inline-block;
+  font-family: 'iconfont-food' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-food-apple:before {
+  content: "\e900";
+}
+.if-food-asparagus:before {
+  content: "\e901";
+}
+.if-food-aubergine:before {
+  content: "\e902";
+}
+.if-food-avocado:before {
+  content: "\e903";
+}
+.if-food-bacon:before {
+  content: "\e904";
+}
+.if-food-baguette:before {
+  content: "\e905";
+}
+.if-food-banana:before {
+  content: "\e906";
+}
+.if-food-beans:before {
+  content: "\e907";
+}
+.if-food-biscuit:before {
+  content: "\e908";
+}
+.if-food-blueberries:before {
+  content: "\e909";
+}
+.if-food-boiled-egg:before {
+  content: "\e90a";
+}
+.if-food-bread:before {
+  content: "\e90b";
+}
+.if-food-broccoli:before {
+  content: "\e90c";
+}
+.if-food-cabbage:before {
+  content: "\e90d";
+}
+.if-food-cake:before {
+  content: "\e90e";
+}
+.if-food-can:before {
+  content: "\e90f";
+}
+.if-food-candy:before {
+  content: "\e910";
+}
+.if-food-can-food:before {
+  content: "\e911";
+}
+.if-food-carrot:before {
+  content: "\e912";
+}
+.if-food-cereals:before {
+  content: "\e913";
+}
+.if-food-cheese:before {
+  content: "\e914";
+}
+.if-food-chef:before {
+  content: "\e915";
+}
+.if-food-cherries:before {
+  content: "\e916";
+}
+.if-food-chili:before {
+  content: "\e917";
+}
+.if-food-chocolate:before {
+  content: "\e918";
+}
+.if-food-cocktail:before {
+  content: "\e919";
+}
+.if-food-coconut:before {
+  content: "\e91a";
+}
+.if-food-coffee:before {
+  content: "\e91b";
+}
+.if-food-corn:before {
+  content: "\e91c";
+}
+.if-food-croissant:before {
+  content: "\e91d";
+}
+.if-food-cucumber:before {
+  content: "\e91e";
+}
+.if-food-cupcake:before {
+  content: "\e91f";
+}
+.if-food-cutlery:before {
+  content: "\e920";
+}
+.if-food-doughnut:before {
+  content: "\e921";
+}
+.if-food-eggs:before {
+  content: "\e922";
+}
+.if-food-fish:before {
+  content: "\e923";
+}
+.if-food-fried-egg:before {
+  content: "\e924";
+}
+.if-food-fries:before {
+  content: "\e925";
+}
+.if-food-garlic:before {
+  content: "\e926";
+}
+.if-food-gingerbread:before {
+  content: "\e927";
+}
+.if-food-glass:before {
+  content: "\e928";
+}
+.if-food-grapes:before {
+  content: "\e929";
+}
+.if-food-hamburger:before {
+  content: "\e92a";
+}
+.if-food-honey:before {
+  content: "\e92b";
+}
+.if-food-hotdog:before {
+  content: "\e92c";
+}
+.if-food-icecream:before {
+  content: "\e92d";
+}
+.if-food-ice-water:before {
+  content: "\e92e";
+}
+.if-food-knife:before {
+  content: "\e92f";
+}
+.if-food-lemon:before {
+  content: "\e930";
+}
+.if-food-lime:before {
+  content: "\e931";
+}
+.if-food-macaron:before {
+  content: "\e932";
+}
+.if-food-meat:before {
+  content: "\e933";
+}
+.if-food-milk:before {
+  content: "\e934";
+}
+.if-food-muffin:before {
+  content: "\e935";
+}
+.if-food-mushrooms:before {
+  content: "\e936";
+}
+.if-food-noodles:before {
+  content: "\e937";
+}
+.if-food-oat:before {
+  content: "\e938";
+}
+.if-food-onion:before {
+  content: "\e939";
+}
+.if-food-orange:before {
+  content: "\e93a";
+}
+.if-food-pasta:before {
+  content: "\e93b";
+}
+.if-food-peach:before {
+  content: "\e93c";
+}
+.if-food-pear:before {
+  content: "\e93d";
+}
+.if-food-pepper:before {
+  content: "\e93e";
+}
+.if-food-pickles:before {
+  content: "\e93f";
+}
+.if-food-pie:before {
+  content: "\e940";
+}
+.if-food-pineapple:before {
+  content: "\e941";
+}
+.if-food-pint:before {
+  content: "\e942";
+}
+.if-food-pizza:before {
+  content: "\e943";
+}
+.if-food-pot:before {
+  content: "\e944";
+}
+.if-food-potato:before {
+  content: "\e945";
+}
+.if-food-pretzel:before {
+  content: "\e946";
+}
+.if-food-pumpkin:before {
+  content: "\e947";
+}
+.if-food-radish:before {
+  content: "\e948";
+}
+.if-food-raspberry:before {
+  content: "\e949";
+}
+.if-food-salad:before {
+  content: "\e94a";
+}
+.if-food-salami:before {
+  content: "\e94b";
+}
+.if-food-sandwich:before {
+  content: "\e94c";
+}
+.if-food-sausage:before {
+  content: "\e94d";
+}
+.if-food-shrimp:before {
+  content: "\e94e";
+}
+.if-food-steak:before {
+  content: "\e94f";
+}
+.if-food-strawberry:before {
+  content: "\e950";
+}
+.if-food-taco:before {
+  content: "\e951";
+}
+.if-food-tea:before {
+  content: "\e952";
+}
+.if-food-toast:before {
+  content: "\e953";
+}
+.if-food-toffee:before {
+  content: "\e954";
+}
+.if-food-tomato:before {
+  content: "\e955";
+}
+.if-food-turkey:before {
+  content: "\e956";
+}
+.if-food-water:before {
+  content: "\e957";
+}
+.if-food-watermelon:before {
+  content: "\e958";
+}
+.if-food-whisk:before {
+  content: "\e959";
+}
+

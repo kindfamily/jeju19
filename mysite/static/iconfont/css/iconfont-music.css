@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'iconfont-music';
+  src:  url('../fonts/iconfont-music-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-music-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-music-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-music-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-music-webfont.svg?hw38j0#iconfont-music') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-music {
+  display: inline-block;
+  font-family: 'iconfont-music' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-music-accordion:before {
+  content: "\e900";
+}
+.if-music-acoustic-guitar:before {
+  content: "\e901";
+}
+.if-music-bagpipes:before {
+  content: "\e902";
+}
+.if-music-balalaika:before {
+  content: "\e903";
+}
+.if-music-banjo:before {
+  content: "\e904";
+}
+.if-music-bell:before {
+  content: "\e905";
+}
+.if-music-cabasa:before {
+  content: "\e906";
+}
+.if-music-chimes:before {
+  content: "\e907";
+}
+.if-music-clave:before {
+  content: "\e908";
+}
+.if-music-conga:before {
+  content: "\e909";
+}
+.if-music-cymbals:before {
+  content: "\e90a";
+}
+.if-music-djembe:before {
+  content: "\e90b";
+}
+.if-music-domra:before {
+  content: "\e90c";
+}
+.if-music-drum:before {
+  content: "\e90d";
+}
+.if-music-drumset:before {
+  content: "\e90e";
+}
+.if-music-drum-sticks:before {
+  content: "\e90f";
+}
+.if-music-electric-guitar:before {
+  content: "\e910";
+}
+.if-music-flute:before {
+  content: "\e911";
+}
+.if-music-french-horn:before {
+  content: "\e912";
+}
+.if-music-harmonica:before {
+  content: "\e913";
+}
+.if-music-harp:before {
+  content: "\e914";
+}
+.if-music-keytar:before {
+  content: "\e915";
+}
+.if-music-marakas:before {
+  content: "\e916";
+}
+.if-music-percussion:before {
+  content: "\e917";
+}
+.if-music-piano:before {
+  content: "\e918";
+}
+.if-music-saxophone:before {
+  content: "\e919";
+}
+.if-music-sitar:before {
+  content: "\e91a";
+}
+.if-music-tambourine:before {
+  content: "\e91b";
+}
+.if-music-triangle:before {
+  content: "\e91c";
+}
+.if-music-trumpet:before {
+  content: "\e91d";
+}
+.if-music-tuning-fork:before {
+  content: "\e91e";
+}
+.if-music-ukelele:before {
+  content: "\e91f";
+}
+.if-music-violin:before {
+  content: "\e920";
+}
+.if-music-xylophone:before {
+  content: "\e921";
+}

@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'iconfont-file';
+  src:  url('../fonts/iconfont-file-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-file-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-file-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-file-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-file-webfont.svg?hw38j0#iconfont-file') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-file {
+  display: inline-block;
+  font-family: 'iconfont-file' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-file-file:before {
+  content: "\e900";
+}
+.if-file-archive:before {
+  content: "\e901";
+}
+.if-file-audio:before {
+  content: "\e902";
+}
+.if-file-cloud:before {
+  content: "\e903";
+}
+.if-file-code:before {
+  content: "\e904";
+}
+.if-file-dwg:before {
+  content: "\e905";
+}
+.if-file-emailfile:before {
+  content: "\e906";
+}
+.if-file-excel:before {
+  content: "\e907";
+}
+.if-file-image:before {
+  content: "\e908";
+}
+.if-file-log:before {
+  content: "\e909";
+}
+.if-file-movie:before {
+  content: "\e90a";
+}
+.if-file-music:before {
+  content: "\e90b";
+}
+.if-file-open:before {
+  content: "\e90c";
+}
+.if-file-pdf:before {
+  content: "\e90d";
+}
+.if-file-photo:before {
+  content: "\e90e";
+}
+.if-file-powerpoint:before {
+  content: "\e90f";
+}
+.if-file-search:before {
+  content: "\e910";
+}
+.if-file-setting:before {
+  content: "\e911";
+}
+.if-file-sound:before {
+  content: "\e912";
+}
+.if-file-text:before {
+  content: "\e913";
+}
+.if-file-text-open:before {
+  content: "\e914";
+}
+.if-file-txt:before {
+  content: "\e915";
+}
+.if-file-word:before {
+  content: "\e916";
+}
+

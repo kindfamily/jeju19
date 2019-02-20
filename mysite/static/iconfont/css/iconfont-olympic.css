@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'iconfont-olympic';
+  src:  url('../fonts/iconfont-olympic-webfont.eot?hw38j0');
+  src:  url('../fonts/iconfont-olympic-webfont.eot?hw38j0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont-olympic-webfont.ttf?hw38j0') format('truetype'),
+    url('../fonts/iconfont-olympic-webfont.woff?hw38j0') format('woff'),
+    url('../fonts/iconfont-olympic-webfont.svg?hw38j0#iconfont-olympic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.if-olympic {
+  display: inline-block;
+  font-family: 'iconfont-olympic' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.if-olympic-jumping-ski:before {
+  content: "\e900";
+}
+.if-olympic-archery:before {
+  content: "\e901";
+}
+.if-olympic-badminton:before {
+  content: "\e902";
+}
+.if-olympic-barbell:before {
+  content: "\e903";
+}
+.if-olympic-basketball:before {
+  content: "\e904";
+}
+.if-olympic-biathlon:before {
+  content: "\e905";
+}
+.if-olympic-bicycle-race:before {
+  content: "\e906";
+}
+.if-olympic-bobsled01:before {
+  content: "\e907";
+}
+.if-olympic-bobsled02:before {
+  content: "\e908";
+}
+.if-olympic-boxing:before {
+  content: "\e909";
+}
+.if-olympic-canoeing01:before {
+  content: "\e90a";
+}
+.if-olympic-canoeing02:before {
+  content: "\e90b";
+}
+.if-olympic-curling:before {
+  content: "\e90c";
+}
+.if-olympic-diving:before {
+  content: "\e90d";
+}
+.if-olympic-equestrian:before {
+  content: "\e90e";
+}
+.if-olympic-fencing:before {
+  content: "\e90f";
+}
+.if-olympic-figure-skating:before {
+  content: "\e910";
+}
+.if-olympic-football:before {
+  content: "\e911";
+}
+.if-olympic-freestyle01:before {
+  content: "\e912";
+}
+.if-olympic-freestyle02:before {
+  content: "\e913";
+}
+.if-olympic-gymnast01:before {
+  content: "\e914";
+}
+.if-olympic-gymnast02:before {
+  content: "\e915";
+}
+.if-olympic-gymnastic01:before {
+  content: "\e916";
+}
+.if-olympic-gymnastic02:before {
+  content: "\e917";
+}
+.if-olympic-gymnastic03:before {
+  content: "\e918";
+}
+.if-olympic-gymnastics:before {
+  content: "\e919";
+}
+.if-olympic-handball:before {
+  content: "\e91a";
+}
+.if-olympic-hockey:before {
+  content: "\e91b";
+}
+.if-olympic-jogging:before {
+  content: "\e91c";
+}
+.if-olympic-judo:before {
+  content: "\e91d";
+}
+.if-olympic-running-with-obstacles:before {
+  content: "\e91e";
+}
+.if-olympic-shooting:before {
+  content: "\e91f";
+}
+.if-olympic-skating01:before {
+  content: "\e920";
+}
+.if-olympic-skating02:before {
+  content: "\e921";
+}
+.if-olympic-ski-race:before {
+  content: "\e922";
+}
+.if-olympic-skiing-race01:before {
+  content: "\e923";
+}
+.if-olympic-skiing-race02:before {
+  content: "\e924";
+}
+.if-olympic-skiing01:before {
+  content: "\e925";
+}
+.if-olympic-skiing02:before {
+  content: "\e926";
+}
+.if-olympic-slalom:before {
+  content: "\e927";
+}
+.if-olympic-snowboard:before {
+  content: "\e928";
+}
+.if-olympic-snowboard-race:before {
+  content: "\e929";
+}
+.if-olympic-swimming:before {
+  content: "\e92a";
+}
+.if-olympic-table-tennis:before {
+  content: "\e92b";
+}
+.if-olympic-taekwondo:before {
+  content: "\e92c";
+}
+.if-olympic-tennis:before {
+  content: "\e92d";
+}
+.if-olympic-toboggan01:before {
+  content: "\e92e";
+}
+.if-olympic-toboggan02:before {
+  content: "\e92f";
+}
+.if-olympic-volleyball:before {
+  content: "\e930";
+}
+.if-olympic-waterpolo:before {
+  content: "\e931";
+}

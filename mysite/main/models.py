@@ -2,9 +2,7 @@ from django.db import models
 from taggit.managers import TaggableManager
 from django.urls import reverse
 
-
 # 기존 cafe 입력 폼 
-
 class Cafe(models.Model):
     이름 = models.CharField(max_length = 50)
     위도 = models.FloatField(null=True)

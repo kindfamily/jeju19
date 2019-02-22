@@ -15,17 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-# from main.views import index, about, write, cafelist, cafedetails, memberlist, faqlist, cafeindex
-from main.views import index, about, new, cafelist, cafedetails, cafeindex, cafe_update
+from ajax.views import post_like, post
 from django.conf.urls.static import static
 from django.conf import settings
-from django.urls import include
-
 
 urlpatterns = [
- path('', index),   
- path('cafe/', include('main.urls')), # main app 의 urls.py 파일을 찾는다
- path('ajax/', include('ajax.urls')), # main app 의 urls.py 파일을 찾는다
+    # path('admin/', admin.site.urls),
+    path('', post),
+    path('like/<int:pk>', post_like, name="post_like"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

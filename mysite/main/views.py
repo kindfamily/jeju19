@@ -7,11 +7,25 @@ import django.http
 # import models
 
 
+
+# serializing 
+# 여러개 불러올때
 def testSerialize(request):
-    s = django.core.serializers.serialize('json',[Cafe.objects.get()])
+    s = django.core.serializers.serialize('json',Cafe.objects.all())
+    # s is a string with [] around it, so strip them off
+    # o=s.strip("[]")
+    return django.http.HttpResponse(s)
+
+
+
+# 한개만 가져올때 
+def testSerialize_one(request,pk):
+    s = django.core.serializers.serialize('json',[Cafe.objects.get(id=pk)])
     # s is a string with [] around it, so strip them off
     o=s.strip("[]")
     return django.http.HttpResponse(o)
+
+
 
 # 제주카페찾기 사이트 관련 함수
 def index(request):

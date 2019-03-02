@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # from main.views import index, about, write, cafelist, cafedetails, memberlist, faqlist, cafeindex
-from main.views import index, about, new, cafelist, cafedetails, cafeindex, cafe_update, cafe_delete ,testSerialize
+from main.views import index, about, new, cafelist, cafedetails, cafeindex, cafe_update, cafe_delete ,testSerialize, testSerialize_one
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -28,6 +28,7 @@ urlpatterns = [
     path('cafelist_s/', testSerialize),
     path('about/', about), # name을 안넣으면 <a href="/cafe/cafelist/{{i.pk}}" 요렇게 넣어야함
     path('cafelist/<int:pk>', cafedetails, name='cafe_list'),   # name을 넣으면 a 테그에 넣을때 <a href="{% url 'cafe_list' i.id %}"> 처럼 넣을수 있음
+    path('cafelist_s/<int:pk>', testSerialize_one, name='cafe_list_one_json'),   # name을 넣으면 a 테그에 넣을때 <a href="{% url 'cafe_list' i.id %}"> 처럼 넣을수 있음
     path('edit/<int:pk>', cafe_update, name='cafe_edit'),
     path('delete/<int:pk>', cafe_delete, name='cafe_delete'),
     
